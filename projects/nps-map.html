@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Abdul Haleem Khan | GIS Analyst &amp; Remote Sensing Specialist</title>
+<meta content="Portfolio of Abdul Haleem Khan - GIS Analyst, Remote Sensing Specialist, and Geospatial Data Engineer." name="description"/>
+<!-- Google Fonts: Montserrat & Inter for precise Tomasz Gajda typographic styling -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            mono: ['Space Grotesk', 'monospace'],
+          },
+          colors: {
+            darkbg: '#121214',
+            surface: '#1b1b1f',
+            charcoal: '#222328',
+            accent: '#0d9488', // Emerald/Teal GIS vibe
+            accentHover: '#0f766e',
+            subtle: '#8e8f96'
+          },
+          letterSpacing: {
+            widestPlus: '0.25em',
+            mega: '0.35em'
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="base-styling">
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f7f8fa;
+      color: #1a1a1e;
+      overflow-x: hidden;
+    }
+    
+    /* Tomasz Gajda Signature Section Frame Box */
+    .section-title-badge {
+      display: inline-block;
+      border: 3px solid #1a1a1e;
+      padding: 0.65rem 2.5rem;
+      letter-spacing: 0.28em;
+      font-weight: 700;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      background: transparent;
+      position: relative;
+    }
+
+    .section-divider-line {
+      width: 70px;
+      height: 3px;
+      background-color: #1a1a1e;
+      margin: 1.5rem auto 2.5rem auto;
+    }
+
+    /* Subtle grid pattern background for hero */
+    .hero-grid-pattern {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    }
+  </style>
+<style data-purpose="interactive-cards">
+    .skill-card {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid #e5e7eb;
+      background-color: #ffffff;
+    }
+    .skill-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);
+      border-color: #1a1a1e;
+    }
+
+    .project-card {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+<!-- END: Custom Styles -->
+<meta content="web_standard" name="shell-type"/></head>
+<body class="antialiased selection:bg-neutral-900 selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#f7f8fa]/90 backdrop-blur-md border-b border-gray-200/80 transition-all duration-300" data-purpose="site-navigation">
+<div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Monogram / Logo -->
+<a class="flex items-center gap-2 group focus:outline-none" href="#">
+<div class="w-10 h-10 bg-neutral-900 text-white flex items-center justify-center font-extrabold text-lg tracking-tighter group-hover:bg-accent transition-colors">
+          AHK
+        </div>
+<span class="font-bold text-sm tracking-widest uppercase hidden sm:inline-block">Abdul Haleem KHAN</span>
+</a>
+<!-- Desktop Nav Links -->
+<nav aria-label="Main Navigation" class="hidden md:flex items-center space-x-8 text-xs font-bold tracking-widest uppercase">
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#about">About Me</a><a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#experience">Experience</a>
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#skills">Skills</a>
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#education">Education</a>
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#portfolio">Portfolio</a>
+<a class="px-5 py-2.5 border-2 border-neutral-900 text-neutral-900 hover:bg-neutral-900 hover:text-white transition-all duration-200" href="../index.html#contact">Contact</a>
+</nav>
+<!-- Language / Region Switcher (Inspired by ENG / PL from Reference) -->
+</div>
+<!-- Mobile Navigation Drawer -->
+<div class="hidden md:hidden border-b border-neutral-200 bg-white px-6 py-6 transition-all" id="mobile-menu">
+<div class="flex flex-col space-y-4 text-center font-bold text-xs uppercase tracking-widest">
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#about">About Me</a><a class="py-2 text-neutral-800 hover:text-black" href="../index.html#experience">Experience</a>
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#skills">Skills</a>
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#education">Education</a>
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#portfolio">Portfolio</a>
+<a class="py-2 bg-neutral-900 text-white rounded mt-2" href="../index.html#contact">Contact</a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main><div class="flex flex-col w-full">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+<!-- Top Navigation & Breadcrumbs -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-8 mb-8 border-b-2 border-neutral-900">
+<a class="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-neutral-900 hover:text-accent transition-colors uppercase" href="../index.html#portfolio">
+<span class="material-symbols-outlined text-sm font-bold">arrow_back</span>
+        Back to Portfolio
+      </a>
+<div class="inline-block bg-neutral-900 text-white text-[11px] font-mono tracking-wider px-3 py-1 uppercase self-start sm:self-auto">
+        CATEGORY B — CARTOGRAPHY &amp; MAP DESIGN // MOUNTAIN RECREATION &amp; TERRAIN CARTOGRAPHY
+      </div>
+</div>
+<!-- Case Study Header Area -->
+<header class="mb-12">
+<div class="inline-block border-2 border-neutral-900 px-3 py-1 text-xs font-bold tracking-widest uppercase mb-4 bg-white">
+        Case Study #04 • Full Plate Cartographic Review
+      </div>
+<h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-neutral-900 uppercase leading-none mb-6">
+        CASCADE PEAKS NATIONAL PARK: NPS VINTAGE-MODERN TOPOGRAPHIC CARTOGRAPHY
+      </h1>
+<p class="text-sm sm:text-base text-neutral-700 max-w-4xl font-medium leading-relaxed mb-8">
+        Meticulous recreation of iconic US National Park Service cartographic standards using ArcGIS Pro, custom multi-directional terrain relief blending, hillshade illumination, and hand-tuned vector contour typography.
+      </p>
+<!-- Action Buttons Bar -->
+<div class="flex flex-wrap items-center gap-3">
+<a class="inline-flex items-center gap-2 bg-neutral-900 hover:bg-neutral-800 text-white px-5 py-3 text-xs font-bold tracking-widest uppercase transition-all shadow-sm" href="https://github.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-base">code</span>
+          View GitHub Repository
+        </a>
+<a class="inline-flex items-center gap-2 border-2 border-neutral-900 bg-white hover:bg-neutral-900 hover:text-white text-neutral-900 px-5 py-3 text-xs font-bold tracking-widest uppercase transition-all" href="#downloads">
+<span class="material-symbols-outlined text-base">download</span>
+          Download Print PDF (300 DPI)
+        </a>
+<a class="inline-flex items-center gap-2 border-2 border-neutral-900 bg-white hover:bg-neutral-100 text-neutral-900 px-5 py-3 text-xs font-bold tracking-widest uppercase transition-all" href="#design-system">
+<span class="material-symbols-outlined text-base">palette</span>
+          Inspect Map Composer Styles
+        </a>
+</div>
+</header>
+<!-- Featured Map Section: 2px Solid Black Border Plate Frame -->
+<section class="mb-16">
+<div class="border-2 border-neutral-900 bg-white p-2 sm:p-4 shadow-sm">
+<!-- Plate Top Monogram / HUD Banner -->
+<div class="border-b-2 border-neutral-900 pb-3 mb-3 flex flex-wrap items-center justify-between gap-2 px-1 text-[11px] font-mono uppercase tracking-wider text-neutral-700">
+<span class="font-bold text-neutral-900">PLATE 03 // MOUNT ELBERT &amp; CASCADE RANGE QUAD</span>
+<span class="hidden md:inline">QUADRANGLE CODE: WA-CASCADE-7.5MIN</span>
+<span class="text-accent font-bold">STATUS: AUTHORIZED ARCHIVAL GRADE</span>
+</div>
+<!-- Featured Map Image -->
+<div class="relative w-full overflow-hidden bg-neutral-100 border border-neutral-300">
+<img class="w-full h-auto object-cover max-h-[720px] transition-transform duration-500 hover:scale-[1.01]" data-alt="Vintage-modern National Park Service style topographic map of Cascade Peaks showing intricate tan and olive shaded relief, sharp brown contour lines, blue glacial river ribbons, trail markers in crimson, and official park boundary cordons on archival parchment background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC61smwPuB6J0lMD0jWJhbDphrldVxOxm5AIMCE-wsa_lwjetKoWCrrWNUB5Vm7k2ZPgLX7-eS4T_TSZExDPmUbx4rI41DGMR-VN_RJjEhO6g1Q9cqvNF8zQFFQiU4mHTcs5RbPIKj7vIY1Nni04yS1os-XzfOlO8qqvT-KOSrZKuGAY-BOodJ67feXLmISGelDHi74w-8uyeSaPOeRwZkGDJfqi0nPXSX6aiAFGkpwZsML2iDYdZlX"/>
+</div>
+<!-- Plate Technical Metadata Grid (Bottom) -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 px-1 border-t-2 border-neutral-900 mt-3 font-mono text-[11px]">
+<div class="border border-neutral-200 p-2 bg-neutral-50">
+<span class="block text-neutral-500 uppercase tracking-wider text-[9px] mb-0.5">Reference CRS</span>
+<span class="font-bold text-neutral-900">NAD83 / WA North (EPSG:2285)</span>
+</div>
+<div class="border border-neutral-200 p-2 bg-neutral-50">
+<span class="block text-neutral-500 uppercase tracking-wider text-[9px] mb-0.5">Nominal Scale</span>
+<span class="font-bold text-neutral-900">1:24,000 USGS Standard</span>
+</div>
+<div class="border border-neutral-200 p-2 bg-neutral-50">
+<span class="block text-neutral-500 uppercase tracking-wider text-[9px] mb-0.5">Elevation Envelope</span>
+<span class="font-bold text-neutral-900">1,200m – 4,392m ASL</span>
+</div>
+<div class="border border-neutral-200 p-2 bg-neutral-50">
+<span class="block text-neutral-500 uppercase tracking-wider text-[9px] mb-0.5">Hypsometric Step</span>
+<span class="font-bold text-neutral-900">40ft Index / 10ft Interm.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: TECHNICAL METRICS -->
+<section class="mb-16">
+<div class="flex items-center justify-center mb-8">
+<div class="border-2 border-neutral-900 px-6 py-2 text-xs sm:text-sm font-bold tracking-widest uppercase bg-white">
+          TECHNICAL METRICS
+        </div>
+</div>
+<div class="w-16 h-0.5 bg-neutral-900 mx-auto -mt-5 mb-10"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Metric Card 1 -->
+<div class="border-2 border-neutral-900 bg-white p-5 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between text-neutral-400 font-mono text-xs mb-3">
+<span>01 / SURFACE</span>
+<span class="material-symbols-outlined text-neutral-900 text-lg">terrain</span>
+</div>
+<h3 class="font-bold text-sm text-neutral-900 tracking-wider uppercase mb-2">
+              TERRAIN MODELING: 10m USGS 3DEP DEM
+            </h3>
+<p class="text-xs text-neutral-600 leading-relaxed">
+              Multi-directional hillshade blending with 45° azimuth primary fill, 315° specular highlight, and 30° altitude angle to reproduce crisp Swiss glacial morphology.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-neutral-200 font-mono text-[10px] text-neutral-500 uppercase">
+            Interpolation: Bilinear Spline
+          </div>
+</div>
+<!-- Metric Card 2 -->
+<div class="border-2 border-neutral-900 bg-white p-5 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between text-neutral-400 font-mono text-xs mb-3">
+<span>02 / ISOLINES</span>
+<span class="material-symbols-outlined text-neutral-900 text-lg">timeline</span>
+</div>
+<h3 class="font-bold text-sm text-neutral-900 tracking-wider uppercase mb-2">
+              CONTOUR FIDELITY: 1,840+ CONTOURS
+            </h3>
+<p class="text-xs text-neutral-600 leading-relaxed">
+              Automated index and intermediate contour line smoothing using PAEK polynomial algorithms with zero self-intersections and topological validation.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-neutral-200 font-mono text-[10px] text-neutral-500 uppercase">
+            Tolerance: 2.5m Smoothing Radius
+          </div>
+</div>
+<!-- Metric Card 3 -->
+<div class="border-2 border-neutral-900 bg-white p-5 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between text-neutral-400 font-mono text-xs mb-3">
+<span>03 / LABELS</span>
+<span class="material-symbols-outlined text-neutral-900 text-lg">format_size</span>
+</div>
+<h3 class="font-bold text-sm text-neutral-900 tracking-wider uppercase mb-2">
+              TYPOGRAPHIC SCALE: NPS RAW TYPEFACE
+            </h3>
+<p class="text-xs text-neutral-600 leading-relaxed">
+              Classical National Park Service standard typography hierarchy for summits, alpine traverse trails, drainage networks, and ranger outpost callouts.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-neutral-200 font-mono text-[10px] text-neutral-500 uppercase">
+            Engine: Maplex Label Placement
+          </div>
+</div>
+<!-- Metric Card 4 -->
+<div class="border-2 border-neutral-900 bg-white p-5 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between text-neutral-400 font-mono text-xs mb-3">
+<span>04 / HYPSOMETRY</span>
+<span class="material-symbols-outlined text-neutral-900 text-lg">palette</span>
+</div>
+<h3 class="font-bold text-sm text-neutral-900 tracking-wider uppercase mb-2">
+              COLOR COMPOSITION: RETRO HYPSOMETRIC
+            </h3>
+<p class="text-xs text-neutral-600 leading-relaxed">
+              Forest green sub-alpine lowlands transitioning gracefully to warm parchment cream moraines and glaciated alpine talus summits.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-neutral-200 font-mono text-[10px] text-neutral-500 uppercase">
+            Palette: CMYK Press Calibrated
+          </div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: CARTOGRAPHIC SPECIFICATION & DESIGN SYSTEM -->
+<section class="mb-16" id="design-system">
+<div class="flex items-center justify-center mb-8">
+<div class="border-2 border-neutral-900 px-6 py-2 text-xs sm:text-sm font-bold tracking-widest uppercase bg-white">
+          CARTOGRAPHIC SPECIFICATION &amp; DESIGN SYSTEM
+        </div>
+</div>
+<div class="w-16 h-0.5 bg-neutral-900 mx-auto -mt-5 mb-10"></div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Left Column: Shaded Relief Alchemy -->
+<div class="border-2 border-neutral-900 bg-white p-6 sm:p-8">
+<div class="flex items-center gap-3 mb-5 pb-3 border-b-2 border-neutral-900">
+<span class="material-symbols-outlined text-xl text-neutral-900">layers</span>
+<h3 class="text-base font-bold uppercase tracking-wider text-neutral-900">
+              Hillshade &amp; Shaded Relief Alchemy
+            </h3>
+</div>
+<p class="text-xs sm:text-sm text-neutral-700 leading-relaxed mb-6 font-medium">
+            Standard single-source hillshading leaves northwestern canyons washed out and southeastern ravines in complete shadow. To honor historical Eduard Imhof Swiss relief techniques, four distinct raster layers were combined inside ArcGIS Pro's raster function chain:
+          </p>
+<div class="space-y-4 font-mono text-xs">
+<div class="border border-neutral-300 p-3 bg-neutral-50">
+<div class="flex justify-between items-center mb-1">
+<span class="font-bold text-neutral-900">1. MULTI-DIRECTIONAL OBLIQUE ILLUMINATION</span>
+<span class="text-neutral-500">OPACITY: 65%</span>
+</div>
+<p class="text-neutral-600 font-sans text-xs">Simulates light bouncing from 4 separate angles (225°, 270°, 315°, 360°) to reveal hidden ridges without flattening valley bottoms.</p>
+</div>
+<div class="border border-neutral-300 p-3 bg-neutral-50">
+<div class="flex justify-between items-center mb-1">
+<span class="font-bold text-neutral-900">2. TOPOGRAPHIC AMBIENT OCCLUSION</span>
+<span class="text-neutral-500">BLEND: MULTIPLY 40%</span>
+</div>
+<p class="text-neutral-600 font-sans text-xs">Calculates sky view factor to naturally darken deep glacial cirques, canyons, and couloirs without muddying high-altitude ridges.</p>
+</div>
+<div class="border border-neutral-300 p-3 bg-neutral-50">
+<div class="flex justify-between items-center mb-1">
+<span class="font-bold text-neutral-900">3. HYPSOMETRIC TINT OVERLAY</span>
+<span class="text-neutral-500">BLEND: SOFT LIGHT 75%</span>
+</div>
+<p class="text-neutral-600 font-sans text-xs">Vintage NPS palette: Deep spruce green (#2A442A) grading through tawny ochre (#C5B48B) to pristine glaciated snow fields (#F4F4EE).</p>
+</div>
+</div>
+</div>
+<!-- Right Column: NPS Vector Symbology Breakdown -->
+<div class="border-2 border-neutral-900 bg-white p-6 sm:p-8">
+<div class="flex items-center gap-3 mb-5 pb-3 border-b-2 border-neutral-900">
+<span class="material-symbols-outlined text-xl text-neutral-900">legend_toggle</span>
+<h3 class="text-base font-bold uppercase tracking-wider text-neutral-900">
+              NPS Vector Symbology Legend Breakdown
+            </h3>
+</div>
+<p class="text-xs sm:text-sm text-neutral-700 leading-relaxed mb-6 font-medium">
+            Custom vector symbols hand-crafted according to the <em>Harpers Ferry Center</em> cartographic standards for mountain recreational wayfinding:
+          </p>
+<div class="space-y-3 font-mono text-xs">
+<div class="flex items-center justify-between border-2 border-neutral-900 p-3 bg-white">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-neutral-900 text-white flex items-center justify-center font-bold text-xs">
+<span class="material-symbols-outlined text-base">hiking</span>
+</div>
+<div>
+<div class="font-bold text-neutral-900 text-xs">TRAILHEAD &amp; PACIFIC CREST TRAIL</div>
+<div class="text-[10px] text-neutral-500 font-sans">0.8pt crimson dashed rule (#8B2500)</div>
+</div>
+</div>
+<span class="border border-neutral-400 px-2 py-0.5 text-[10px] font-bold">CLASS 1</span>
+</div>
+<div class="flex items-center justify-between border-2 border-neutral-900 p-3 bg-white">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-neutral-900 text-white flex items-center justify-center font-bold text-xs">
+<span class="material-symbols-outlined text-base">camping</span>
+</div>
+<div>
+<div class="font-bold text-neutral-900 text-xs">ALPINE BACKCOUNTRY CAMPSITE</div>
+<div class="text-[10px] text-neutral-500 font-sans">Solid black trapezoid with tent glyph</div>
+</div>
+</div>
+<span class="border border-neutral-400 px-2 py-0.5 text-[10px] font-bold">PERMIT REQ.</span>
+</div>
+<div class="flex items-center justify-between border-2 border-neutral-900 p-3 bg-white">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-neutral-900 text-white flex items-center justify-center font-bold text-xs">
+<span class="material-symbols-outlined text-base">landscape</span>
+</div>
+<div>
+<div class="font-bold text-neutral-900 text-xs">GLACIER CREVASSE &amp; MORAINE RIDGES</div>
+<div class="text-[10px] text-neutral-500 font-sans">Fine cyan stippling with serrated crest line</div>
+</div>
+</div>
+<span class="border border-neutral-400 px-2 py-0.5 text-[10px] font-bold">HAZARD ZONE</span>
+</div>
+<div class="flex items-center justify-between border-2 border-neutral-900 p-3 bg-white">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-neutral-900 text-white flex items-center justify-center font-bold text-xs">
+<span class="material-symbols-outlined text-base">fence</span>
+</div>
+<div>
+<div class="font-bold text-neutral-900 text-xs">PARK BOUNDARY LEGAL CORDON</div>
+<div class="text-[10px] text-neutral-500 font-sans">Alternating heavy green dash-dot boundary</div>
+</div>
+</div>
+<span class="border border-neutral-400 px-2 py-0.5 text-[10px] font-bold">LEGAL CAD</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: ARCGIS PRO / PYTHON WORKFLOW AUTOMATION -->
+<section class="mb-16">
+<div class="flex items-center justify-center mb-8">
+<div class="border-2 border-neutral-900 px-6 py-2 text-xs sm:text-sm font-bold tracking-widest uppercase bg-white">
+          ARCGIS PRO / PYTHON WORKFLOW AUTOMATION
+        </div>
+</div>
+<div class="w-16 h-0.5 bg-neutral-900 mx-auto -mt-5 mb-10"></div>
+<div class="border-2 border-neutral-900 bg-neutral-950 text-neutral-200 p-6 sm:p-8 font-mono shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-2 border-b border-neutral-800 pb-4 mb-4 text-xs text-neutral-400">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-red-500 inline-block"></span>
+<span class="w-3 h-3 bg-yellow-500 inline-block"></span>
+<span class="w-3 h-3 bg-green-500 inline-block"></span>
+<span class="ml-2 font-bold text-white">nps_batch_topographic_pipeline.py</span>
+</div>
+<span class="text-[11px] text-neutral-500">ArcPy 3.2 • Python 3.9 • GDAL 3.7</span>
+</div>
+<pre class="overflow-x-auto text-xs leading-relaxed text-neutral-300"><code><span class="text-neutral-500"># Automated multi-elevation contour extraction and index line tagging</span>
+<span class="text-teal-400">import</span> arcpy
+<span class="text-teal-400">from</span> arcpy.sa <span class="text-teal-400">import</span> ContourWithBarriers, SurfaceParameters, Raster
+
+<span class="text-neutral-500"># Set Geoprocessing Environment</span>
+arcpy.env.workspace = <span class="text-amber-200">"C:/GIS/CascadePeaks/Project_DB.gdb"</span>
+arcpy.env.overwriteOutput = <span class="text-teal-400">True</span>
+
+dem_raster = Raster(<span class="text-amber-200">"USGS_10M_DEM_CascadePeaks"</span>)
+
+<span class="text-neutral-500"># 1. Generate 10-ft Intermediate &amp; 40-ft Index Contours</span>
+contour_fc = <span class="text-amber-200">"Cascade_Contours_Smoothed"</span>
+ContourWithBarriers(
+    in_surface_raster=dem_raster,
+    out_contour_feature_class=contour_fc,
+    in_barrier_features=<span class="text-amber-200">"Glacier_Masks"</span>,
+    contour_interval=<span class="text-purple-300">10</span>,
+    base_contour=<span class="text-purple-300">0</span>,
+    contour_type=<span class="text-amber-200">"CONTOUR"</span>
+)
+
+<span class="text-neutral-500"># 2. Tag Index Contours (Modulo 40) &amp; Set Maplex Line Weight Attributes</span>
+arcpy.management.AddField(contour_fc, <span class="text-amber-200">"TYPE"</span>, <span class="text-amber-200">"TEXT"</span>, field_length=<span class="text-purple-300">12</span>)
+<span class="text-teal-400">with</span> arcpy.da.UpdateCursor(contour_fc, [<span class="text-amber-200">"Contour"</span>, <span class="text-amber-200">"TYPE"</span>]) <span class="text-teal-400">as</span> cursor:
+    <span class="text-teal-400">for</span> row <span class="text-teal-400">in</span> cursor:
+        row[<span class="text-purple-300">1</span>] = <span class="text-amber-200">"INDEX"</span> <span class="text-teal-400">if</span> (row[<span class="text-purple-300">0</span>] % <span class="text-purple-300">40</span> == <span class="text-purple-300">0</span>) <span class="text-teal-400">else</span> <span class="text-amber-200">"INTERMEDIATE"</span>
+        cursor.updateRow(row)
+
+<span class="text-neutral-500"># 3. Batch Export 300-DPI A1 Archival Plate</span>
+aprx = arcpy.mp.ArcGISProject(<span class="text-amber-200">"C:/GIS/CascadePeaks/CascadeLayout.aprx"</span>)
+layout = aprx.listLayouts(<span class="text-amber-200">"Cascade_Plate_03"</span>)[<span class="text-purple-300">0</span>]
+layout.exportToPDF(<span class="text-amber-200">"Output/Cascade_Peaks_NPS_Plate03_Print300.pdf"</span>, resolution=<span class="text-purple-300">300</span>, image_quality=<span class="text-amber-200">"BEST"</span>)
+print(<span class="text-amber-200">"[SUCCESS] Topographic Map Series Export Completed."</span>)</code></pre>
+</div>
+</section>
+<!-- SECTION 4: PROJECT DELIVERABLES -->
+<section class="mb-16" id="downloads">
+<div class="flex items-center justify-center mb-8">
+<div class="border-2 border-neutral-900 px-6 py-2 text-xs sm:text-sm font-bold tracking-widest uppercase bg-white">
+          PROJECT DELIVERABLES
+        </div>
+</div>
+<div class="w-16 h-0.5 bg-neutral-900 mx-auto -mt-5 mb-10"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Deliverable 1 -->
+<div class="border-2 border-neutral-900 bg-white p-6 flex flex-col justify-between hover:bg-neutral-50 transition-colors">
+<div>
+<div class="text-2xl font-black text-neutral-900 mb-2">01</div>
+<h4 class="font-bold text-sm tracking-wider uppercase text-neutral-900 mb-2">
+              High-Res Topographic Print Poster (A1 300 DPI)
+            </h4>
+<p class="text-xs text-neutral-600 mb-6">
+              Complete, press-ready CMYK PDF map plate formatted for archival print display with USGS marginalia, neatlines, and scale ratios.
+            </p>
+</div>
+<a class="inline-flex items-center justify-between border-2 border-neutral-900 px-4 py-2 text-xs font-bold uppercase hover:bg-neutral-900 hover:text-white transition-all" href="#">
+<span>Download PDF (48 MB)</span>
+<span class="material-symbols-outlined text-sm">download</span>
+</a>
+</div>
+<!-- Deliverable 2 -->
+<div class="border-2 border-neutral-900 bg-white p-6 flex flex-col justify-between hover:bg-neutral-50 transition-colors">
+<div>
+<div class="text-2xl font-black text-neutral-900 mb-2">02</div>
+<h4 class="font-bold text-sm tracking-wider uppercase text-neutral-900 mb-2">
+              ArcGIS Pro Cartographic Style (.stylx)
+            </h4>
+<p class="text-xs text-neutral-600 mb-6">
+              Importable style file containing all custom NPS symbol sets, line rules, color ramps, and label placement configurations.
+            </p>
+</div>
+<a class="inline-flex items-center justify-between border-2 border-neutral-900 px-4 py-2 text-xs font-bold uppercase hover:bg-neutral-900 hover:text-white transition-all" href="#">
+<span>Download .stylx (4.2 MB)</span>
+<span class="material-symbols-outlined text-sm">download</span>
+</a>
+</div>
+<!-- Deliverable 3 -->
+<div class="border-2 border-neutral-900 bg-white p-6 flex flex-col justify-between hover:bg-neutral-50 transition-colors">
+<div>
+<div class="text-2xl font-black text-neutral-900 mb-2">03</div>
+<h4 class="font-bold text-sm tracking-wider uppercase text-neutral-900 mb-2">
+              Cleaned Geopackage Vector Layers (.gpkg)
+            </h4>
+<p class="text-xs text-neutral-600 mb-6">
+              OGC-compliant GeoPackage dataset containing processed contour polylines, summit point coordinates, and hydrographic centerlines.
+            </p>
+</div>
+<a class="inline-flex items-center justify-between border-2 border-neutral-900 px-4 py-2 text-xs font-bold uppercase hover:bg-neutral-900 hover:text-white transition-all" href="#">
+<span>Download .gpkg (18 MB)</span>
+<span class="material-symbols-outlined text-sm">download</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 5: BIDIRECTIONAL PROJECT FOOTER LINKS -->
+<nav aria-label="Adjacent Case Studies" class="pt-8 border-t-2 border-neutral-900 mb-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-mono text-xs uppercase tracking-wider">
+<!-- Previous Project -->
+<a class="group border-2 border-neutral-900 p-5 bg-white hover:bg-neutral-900 hover:text-white transition-all flex items-center justify-between" href="zurich.html">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-lg group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<div>
+<span class="block text-[10px] text-neutral-500 group-hover:text-neutral-400">PREVIOUS PROJECT</span>
+<span class="font-bold text-neutral-900 group-hover:text-white">ZURICH POPULATION DEMOGRAPHICS</span>
+</div>
+</div>
+<span class="text-[10px] font-bold border border-neutral-300 group-hover:border-neutral-700 px-2 py-1">#03</span>
+</a>
+<!-- Next Project -->
+<a class="group border-2 border-neutral-900 p-5 bg-white hover:bg-neutral-900 hover:text-white transition-all flex items-center justify-between" href="logistics.html">
+<span class="text-[10px] font-bold border border-neutral-300 group-hover:border-neutral-700 px-2 py-1">#05</span>
+<div class="flex items-center gap-3 text-right">
+<div>
+<span class="block text-[10px] text-neutral-500 group-hover:text-neutral-400">NEXT PROJECT</span>
+<span class="font-bold text-neutral-900 group-hover:text-white">BUSINESS LOGISTICS &amp; COMMUTE OPTIMIZATION</span>
+</div>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+</div>
+</nav>
+</div>
+</div></main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-neutral-950 text-white py-16 border-t border-neutral-800" data-purpose="site-footer">
+<div class="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
+<!-- Back to Top Arrow matching Tomasz Gajda footer arrow button -->
+<a aria-label="Back to Top" class="w-12 h-12 bg-neutral-800 hover:bg-neutral-700 text-white flex items-center justify-center mb-8 border border-neutral-700 transition-colors" href="#">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<!-- Footer Monogram -->
+<div class="text-lg font-black tracking-widest mb-4">
+        ABDUL HALEEM KHAN
+      </div>
+<p class="text-xs text-neutral-400 tracking-wider uppercase mb-8 max-w-md">
+        Geographical Information Systems • Remote Sensing Science • Automated Spatial ETL Pipelines
+      </p>
+<!-- Footer Social Links -->
+<div class="flex items-center space-x-6 mb-8 text-neutral-400 text-xs font-bold tracking-widest uppercase">
+<a class="hover:text-white transition-colors" href="https://linkedin.com" rel="noopener" target="_blank">LinkedIn</a>
+<a class="hover:text-white transition-colors" href="https://github.com" rel="noopener" target="_blank">GitHub</a>
+<a class="hover:text-white transition-colors" href="mailto:ahaleem.spatial@outlook.com">Email</a>
+<a class="hover:text-white transition-colors" href="../index.html#about">Bio</a>
+</div>
+<!-- Copyright Notice -->
+<p class="text-[11px] text-neutral-500 font-mono tracking-wider">
+        © 2026 Abdul Haleem Khan.  All rights reserved.
+      </p>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: JavaScript Functionality -->
+<script data-purpose="portfolio-filtering">
+    // Filtering logic for the project gallery
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filterValue = button.getAttribute('data-filter');
+
+          // Toggle active styling on buttons
+          filterButtons.forEach(btn => {
+            btn.classList.remove('bg-neutral-900', 'text-white');
+            btn.classList.add('border', 'border-neutral-300', 'text-neutral-600');
+          });
+          button.classList.remove('border', 'border-neutral-300', 'text-neutral-600');
+          button.classList.add('bg-neutral-900', 'text-white');
+
+          // Filter card visibility
+          projectCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+            if (filterValue === 'all' || cardCategory === filterValue) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+<script data-purpose="mobile-menu-toggle">
+    // Simple toggle for the responsive mobile header drawer
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when a navigation item is clicked
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+  </script>
+<!-- END: JavaScript Functionality -->
+</body></html>

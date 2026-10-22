@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Abdul Haleem Khan | GIS Analyst &amp; Remote Sensing Specialist</title>
+<meta content="Portfolio of Abdul Haleem Khan - GIS Analyst, Remote Sensing Specialist, and Geospatial Data Engineer." name="description"/>
+<!-- Google Fonts: Montserrat & Inter for precise Tomasz Gajda typographic styling -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            mono: ['Space Grotesk', 'monospace'],
+          },
+          colors: {
+            darkbg: '#121214',
+            surface: '#1b1b1f',
+            charcoal: '#222328',
+            accent: '#0d9488', // Emerald/Teal GIS vibe
+            accentHover: '#0f766e',
+            subtle: '#8e8f96'
+          },
+          letterSpacing: {
+            widestPlus: '0.25em',
+            mega: '0.35em'
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="base-styling">
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f7f8fa;
+      color: #1a1a1e;
+      overflow-x: hidden;
+    }
+    
+    /* Tomasz Gajda Signature Section Frame Box */
+    .section-title-badge {
+      display: inline-block;
+      border: 3px solid #1a1a1e;
+      padding: 0.65rem 2.5rem;
+      letter-spacing: 0.28em;
+      font-weight: 700;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      background: transparent;
+      position: relative;
+    }
+
+    .section-divider-line {
+      width: 70px;
+      height: 3px;
+      background-color: #1a1a1e;
+      margin: 1.5rem auto 2.5rem auto;
+    }
+
+    /* Subtle grid pattern background for hero */
+    .hero-grid-pattern {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    }
+  </style>
+<style data-purpose="interactive-cards">
+    .skill-card {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid #e5e7eb;
+      background-color: #ffffff;
+    }
+    .skill-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);
+      border-color: #1a1a1e;
+    }
+
+    .project-card {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+<!-- END: Custom Styles -->
+<meta content="web_standard" name="shell-type"/></head>
+<body class="antialiased selection:bg-neutral-900 selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#f7f8fa]/90 backdrop-blur-md border-b border-gray-200/80 transition-all duration-300" data-purpose="site-navigation">
+<div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Monogram / Logo -->
+<a class="flex items-center gap-2 group focus:outline-none" href="#">
+<div class="w-10 h-10 bg-neutral-900 text-white flex items-center justify-center font-extrabold text-lg tracking-tighter group-hover:bg-accent transition-colors">
+          AHK
+        </div>
+<span class="font-bold text-sm tracking-widest uppercase hidden sm:inline-block">Abdul Haleem KHAN</span>
+</a>
+<!-- Desktop Nav Links -->
+<nav aria-label="Main Navigation" class="hidden md:flex items-center space-x-8 text-xs font-bold tracking-widest uppercase">
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#about">About Me</a><a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#experience">Experience</a>
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#skills">Skills</a>
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#education">Education</a>
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#portfolio">Portfolio</a>
+<a class="px-5 py-2.5 border-2 border-neutral-900 text-neutral-900 hover:bg-neutral-900 hover:text-white transition-all duration-200" href="../index.html#contact">Contact</a>
+</nav>
+<!-- Language / Region Switcher (Inspired by ENG / PL from Reference) -->
+</div>
+<!-- Mobile Navigation Drawer -->
+<div class="hidden md:hidden border-b border-neutral-200 bg-white px-6 py-6 transition-all" id="mobile-menu">
+<div class="flex flex-col space-y-4 text-center font-bold text-xs uppercase tracking-widest">
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#about">About Me</a><a class="py-2 text-neutral-800 hover:text-black" href="../index.html#experience">Experience</a>
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#skills">Skills</a>
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#education">Education</a>
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#portfolio">Portfolio</a>
+<a class="py-2 bg-neutral-900 text-white rounded mt-2" href="../index.html#contact">Contact</a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main><div class="flex flex-col w-full">
+<!-- Minimalist Breadcrumb Bar -->
+<section class="w-full bg-[#f7f8fa] py-8">
+<div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+<a class="inline-flex items-center gap-3 px-5 py-2.5 bg-surface text-on-surface hover:bg-on-surface hover:text-surface transition-all duration-200 font-telemetry-mono text-telemetry-mono tracking-widest uppercase" href="../index.html#portfolio">
+<span>←</span>
+<span>Back to Portfolio</span>
+</a>
+<div class="hidden sm:flex items-center gap-3 font-telemetry-mono text-label-xs uppercase tracking-widest text-outline">
+<span class="w-2 h-2 rounded-full bg-secondary-container inline-block"></span>
+<span>ID: RS-EO-2024-09B</span>
+<span class="text-outline-variant">/</span>
+<span>EPSG: 32610</span>
+</div>
+</div>
+</section>
+<!-- Project Header Section (Tomasz Gajda Framed Style) -->
+<section class="w-full bg-[#f7f8fa] pb-12">
+<div class="max-w-6xl mx-auto px-6 text-center">
+<!-- Framed Category Pill -->
+<div class="inline-block px-5 py-1.5 bg-surface-container-low text-primary font-telemetry-mono text-label-xs uppercase tracking-widestPlus mb-6">
+        Category A — Remote Sensing &amp; Earth Observation
+      </div>
+<!-- Main Project Title -->
+<h1 class="font-display-lg text-display-lg text-surface-dim uppercase max-w-4xl mx-auto tracking-tight mb-4">
+        Burn Severity Analysis &amp; Wildfire Damage Mapping
+      </h1>
+<!-- Subtitle Description -->
+<p class="font-body-base text-body-base text-outline-variant max-w-2xl mx-auto mb-8 font-medium">
+        High-throughput Sentinel-2 Level-2A surface reflectance differencing, normalized burn ratio (NBR) modeling, and multi-temporal canopy mortality quantification across the Stanislaus National Forest.
+      </p>
+<!-- Gajda Horizontal Rule with Center Dot -->
+<div class="flex items-center justify-center gap-4 max-w-xs mx-auto mb-10">
+<div class="h-0.5 flex-1 bg-surface-container-high"></div>
+<div class="w-2 h-2 bg-surface-container-highest"></div>
+<div class="h-0.5 flex-1 bg-surface-container-high"></div>
+</div>
+</div>
+</section>
+<!-- Framed Map Showcase (Tomasz Gajda Box Architecture) -->
+<section class="w-full bg-[#f7f8fa] pb-16">
+<div class="max-w-6xl mx-auto px-6">
+<div class="bg-surface-container-lowest shadow-xl overflow-hidden relative">
+<!-- HUD Overlay Bar Top -->
+<div class="bg-surface-dim text-on-surface px-6 py-3 flex flex-wrap items-center justify-between font-telemetry-mono text-label-xs uppercase tracking-widest border-b border-surface-container-high">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 bg-[#ff3b30] rounded-none inline-block"></span>
+<span class="text-primary font-bold">Sierra Creek Fire — dNBR Assessment</span>
+</div>
+<div class="flex items-center gap-6 text-on-surface-variant">
+<span>Sensor: Sentinel-2 MSI (B8A, B12)</span>
+<span class="hidden md:inline">TIR: 10m Ground Sample Res</span>
+<span>Date: 2024-09-20</span>
+</div>
+</div>
+<!-- Satellite Image Display (Exact Reference Map Placeholder) -->
+<div class="relative w-full aspect-[16/9] bg-surface-dim flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Satellite remote sensing map of Sierra Creek Fire burn severity analysis displaying Sentinel-2 dNBR false-color infrared burn scar in Stanislaus National Forest California with red high severity zones, yellow-green low severity perimeters, topographic contours, map legend, and severity distribution histogram." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmCZZJLw7tWJo9RYw24fFJWpSIzdwxFR-KfleRrESq45KLceP4i8ZMEtV5VduaHn4gmB37-UubKcXzpI3t9UnjFoWHMyLalrVTXHtM5cyxro6u2knFC2O_p4WsZTBS08SEtA3u0x65ikBhumq1Z5knECKcXbZ1xrew464cUgb1dspPTV6bemW6Z9WrTWi1Myi2ka5aoPCajM-W2gWTC8jpjxozmciXB0ZTTw8gk3Aac58fx-hvpC73"/>
+</div>
+<!-- HUD Telemetry Dock Bottom -->
+<div class="bg-surface-container-low px-6 py-4 flex flex-wrap items-center justify-between text-on-surface gap-4">
+<div class="flex flex-wrap items-center gap-6 font-telemetry-mono text-label-xs text-on-surface-variant">
+<div>
+<span class="text-primary font-bold">BOUNDING EXTENT:</span> 38°15'N 119°40'W to 38°32'N 120°05'W
+            </div>
+<div>
+<span class="text-primary font-bold">TOTAL SCAR:</span> 42,850 Hectares
+            </div>
+<div>
+<span class="text-primary font-bold">PROJECTION:</span> WGS 84 / UTM Zone 10N
+            </div>
+</div>
+<div class="flex items-center gap-3">
+<a class="px-3 py-1 bg-surface-container-high text-on-surface font-telemetry-mono text-label-xs hover:bg-primary hover:text-on-primary transition-colors" href="#code">
+              Inspect Model Script
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Technical Metrics Grid (Tomasz Gajda Framed Tiles) -->
+<section class="w-full bg-[#f7f8fa] pb-16">
+<div class="max-w-6xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Metric Tile 1 -->
+<div class="bg-surface p-6 flex flex-col justify-between shadow-sm">
+<div class="font-telemetry-mono text-label-xs text-outline uppercase tracking-widest mb-3">01 / Core Indices</div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold uppercase mb-2">NBR &amp; dNBR</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">
+            Normalized Burn Ratio derived via Near-Infrared (Band 8A) &amp; Shortwave Infrared (Band 12).
+          </p>
+</div>
+<!-- Metric Tile 2 -->
+<div class="bg-surface p-6 flex flex-col justify-between shadow-sm">
+<div class="font-telemetry-mono text-label-xs text-outline uppercase tracking-widest mb-3">02 / Spatial Extent</div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold uppercase mb-2">Stanislaus NF</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">
+            428.5 km² surveyed area within Sierra Nevada mountainous terrain at 10m / 20m pixel matrix.
+          </p>
+</div>
+<!-- Metric Tile 3 -->
+<div class="bg-surface p-6 flex flex-col justify-between shadow-sm">
+<div class="font-telemetry-mono text-label-xs text-outline uppercase tracking-widest mb-3">03 / Model Validation</div>
+<div class="font-headline-md text-headline-md text-primary font-bold uppercase mb-2">91.4% Kappa</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">
+            Validated against USGS Composite Burn Index (CBI) field survey calibration plots across 124 strata.
+          </p>
+</div>
+<!-- Metric Tile 4 -->
+<div class="bg-surface p-6 flex flex-col justify-between shadow-sm">
+<div class="font-telemetry-mono text-label-xs text-outline uppercase tracking-widest mb-3">04 / Stack Architecture</div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold uppercase mb-2">GEE &amp; ArcPy</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">
+            Automated cloud-masking, BOA atmospheric correction, zonal raster statistics, and cartographic layout.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Narrative Split & Methodology -->
+<section class="w-full bg-[#f7f8fa] pb-16">
+<div class="max-w-6xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Left: Case Study Summary -->
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div>
+<div class="inline-block px-3 py-1 bg-surface-container-high text-primary font-telemetry-mono text-label-xs uppercase tracking-widest mb-4">
+              Mission Context &amp; Objective
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-surface-dim uppercase tracking-tight mb-6">
+              Post-Fire Soil &amp; Canopy Degradation Assessment
+            </h2>
+<div class="space-y-4 font-body-base text-body-base text-surface-container-highest">
+<p>
+                In late Summer 2024, the Sierra Creek Wildfire swept through critical conifer stands in the Stanislaus National Forest, threatening hydrologic basins and sensitive watershed boundaries. Immediate post-fire salvage operations and soil erosion stabilization teams required rapid, geometrically consistent burn severity maps.
+              </p>
+<p>
+                To eliminate cloud distortion and terrain shadow artifacts, an automated spatial pipeline was constructed using Google Earth Engine (GEE). Surface reflectance products from ESA’s Sentinel-2 constellation were pulled across two calibrated temporal windows: a pre-fire baseline (July 15–30, 2024) and an immediate post-fire window (September 18–25, 2024).
+              </p>
+<p>
+                By isolating the Near-Infrared spectrum (sensitive to chlorophyllic cell walls) and Short-Wave Infrared II spectrum (sensitive to water content and ash charring), the delta Normalized Burn Ratio (dNBR) model precisely delineated severe canopy incinerations from moderate scorch patterns.
+              </p>
+</div>
+</div>
+<!-- Highlight Box -->
+<div class="mt-8 p-6 bg-surface-container text-on-surface shadow-md">
+<div class="font-telemetry-mono text-label-xs text-primary font-bold uppercase tracking-wider mb-2">
+              Cartographic Insight
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              High-slope aspects (&gt;35°) in the central canyon manifested extreme severity plumes due to topographical chimney convection, precipitating immediate secondary debris flow hazards modeled for local Forest Service engineers.
+            </p>
+</div>
+</div>
+<!-- Right: Analytical Specification Panel -->
+<div class="lg:col-span-5 bg-surface p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="font-telemetry-mono text-label-xs text-outline uppercase tracking-widest mb-2">
+              Parameters &amp; Ingestion
+            </div>
+<h3 class="font-title-base text-title-base text-on-surface uppercase font-bold mb-6">
+              Processing Pipeline Config
+            </h3>
+<div class="space-y-4 font-telemetry-mono text-telemetry-mono">
+<div class="flex justify-between py-2 border-b border-surface-container-high">
+<span class="text-on-surface-variant">PRE-FIRE SCENE</span>
+<span class="text-on-surface font-bold">2024-07-22 (L2A)</span>
+</div>
+<div class="flex justify-between py-2 border-b border-surface-container-high">
+<span class="text-on-surface-variant">POST-FIRE SCENE</span>
+<span class="text-on-surface font-bold">2024-09-20 (L2A)</span>
+</div>
+<div class="flex justify-between py-2 border-b border-surface-container-high">
+<span class="text-on-surface-variant">CLOUD MASK ALGORITHM</span>
+<span class="text-on-surface font-bold">s2cloudless (Thresh 60%)</span>
+</div>
+<div class="flex justify-between py-2 border-b border-surface-container-high">
+<span class="text-on-surface-variant">NIR REFLECTANCE</span>
+<span class="text-on-surface font-bold">Band 8A (865 nm)</span>
+</div>
+<div class="flex justify-between py-2 border-b border-surface-container-high">
+<span class="text-on-surface-variant">SWIR REFLECTANCE</span>
+<span class="text-on-surface font-bold">Band 12 (2190 nm)</span>
+</div>
+<div class="flex justify-between py-2 border-b border-surface-container-high">
+<span class="text-on-surface-variant">ELEVATION BASELINE</span>
+<span class="text-on-surface font-bold">USGS 3DEP 1/3 Arc-Sec</span>
+</div>
+<div class="flex justify-between py-2">
+<span class="text-on-surface-variant">OUTPUT FORMAT</span>
+<span class="text-primary font-bold">Cloud-Optimized GeoTIFF</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-surface-container-high">
+<a class="w-full text-center block py-3 bg-primary-container text-on-primary font-telemetry-mono text-telemetry-mono uppercase tracking-widest hover:bg-secondary-container transition-all" href="https://earthengine.google.com" rel="noopener" target="_blank">
+              Launch Planetary Cloud Session
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Severity Distribution & Quantitative Table -->
+<section class="w-full bg-[#f7f8fa] pb-16">
+<div class="max-w-6xl mx-auto px-6">
+<div class="mb-8">
+<div class="inline-block px-3 py-1 bg-surface-container-high text-primary font-telemetry-mono text-label-xs uppercase tracking-widest mb-3">
+          Statistical Breakdown
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-surface-dim uppercase tracking-tight">
+          USGS Burn Severity Classification &amp; Area Hectares
+        </h2>
+</div>
+<!-- Quantitative Grid Table -->
+<div class="overflow-x-auto shadow-md">
+<table class="w-full text-left font-telemetry-mono text-telemetry-mono border-collapse">
+<thead>
+<tr class="bg-surface-dim text-on-surface uppercase border-b border-surface-container-high">
+<th class="py-4 px-6 font-bold">Severity Class</th>
+<th class="py-4 px-6 font-bold">dNBR Range</th>
+<th class="py-4 px-6 font-bold">Surface Area (ha)</th>
+<th class="py-4 px-6 font-bold">Percent Total</th>
+<th class="py-4 px-6 font-bold">Field Assessment Description</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high bg-surface text-on-surface">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 flex items-center gap-3 font-bold">
+<span class="w-3.5 h-3.5 bg-[#1b4332] inline-block"></span>
+<span>Enhanced Regrowth</span>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">-500 to -101</td>
+<td class="py-4 px-6 font-bold">1,820 ha</td>
+<td class="py-4 px-6">4.2%</td>
+<td class="py-4 px-6 text-on-surface-variant">Post-fire herbaceous flush &amp; high soil moisture concentration</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 flex items-center gap-3 font-bold">
+<span class="w-3.5 h-3.5 bg-[#40916c] inline-block"></span>
+<span>Unburned / Baseline</span>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">-100 to +99</td>
+<td class="py-4 px-6 font-bold">14,240 ha</td>
+<td class="py-4 px-6">33.2%</td>
+<td class="py-4 px-6 text-on-surface-variant">Intact forest canopy, no thermal alteration or foliage loss</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 flex items-center gap-3 font-bold">
+<span class="w-3.5 h-3.5 bg-[#ffd166] inline-block"></span>
+<span>Low Severity</span>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">+100 to +269</td>
+<td class="py-4 px-6 font-bold">8,950 ha</td>
+<td class="py-4 px-6">20.9%</td>
+<td class="py-4 px-6 text-on-surface-variant">Surface litter consumption, light scorch, crown canopy preserved</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 flex items-center gap-3 font-bold">
+<span class="w-3.5 h-3.5 bg-[#f77f00] inline-block"></span>
+<span>Moderate Severity</span>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">+270 to +659</td>
+<td class="py-4 px-6 font-bold">11,460 ha</td>
+<td class="py-4 px-6">26.7%</td>
+<td class="py-4 px-6 text-on-surface-variant">Partial overstory canopy mortality; understory fully consumed</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low">
+<td class="py-4 px-6 flex items-center gap-3 font-bold text-error">
+<span class="w-3.5 h-3.5 bg-[#d62828] inline-block"></span>
+<span>High Severity</span>
+</td>
+<td class="py-4 px-6 font-bold text-error">+660 to +1300</td>
+<td class="py-4 px-6 font-bold text-error">6,380 ha</td>
+<td class="py-4 px-6 font-bold text-error">15.0%</td>
+<td class="py-4 px-6 text-on-surface">Complete canopy incineration, needle vaporization, black ash deep soil scorch</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Spectral Engine Code Pipeline -->
+<section class="w-full bg-[#f7f8fa] pb-20" id="code">
+<div class="max-w-6xl mx-auto px-6">
+<div class="mb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+<div>
+<div class="inline-block px-3 py-1 bg-surface-container-high text-primary font-telemetry-mono text-label-xs uppercase tracking-widest mb-2">
+            Automated Spectral Engine
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-surface-dim uppercase tracking-tight">
+            Google Earth Engine Differencing Pipeline
+          </h2>
+</div>
+<button class="px-4 py-2 bg-surface text-on-surface hover:bg-surface-container-highest transition-colors font-telemetry-mono text-label-xs uppercase tracking-widest self-start sm:self-auto" id="copy-code-btn">
+          Copy Snippet
+        </button>
+</div>
+<!-- Code Container -->
+<div class="bg-surface-dim text-[#f0f6fc] p-6 shadow-xl overflow-x-auto">
+<div class="font-telemetry-mono text-label-xs text-outline pb-4 mb-4 border-b border-surface-container-high flex items-center justify-between">
+<span>// ee_sentinel2_dnbr_processor.js</span>
+<span>RUNTIME: V8 CLOUD RUN</span>
+</div>
+<pre class="font-code-mono text-code-mono text-on-surface-variant leading-relaxed"><code><span class="text-primary font-bold">// 1. Atmospheric &amp; Cloud Masking Function</span>
+<span class="text-tertiary">function</span> <span class="text-secondary">maskS2clouds</span>(image) {
+  <span class="text-tertiary">var</span> qa = image.select(<span class="text-[#a5d6ff]">'QA60'</span>);
+  <span class="text-tertiary">var</span> cloudBitMask = 1 &lt;&lt; 10;
+  <span class="text-tertiary">var</span> cirrusBitMask = 1 &lt;&lt; 11;
+  <span class="text-tertiary">var</span> mask = qa.bitwiseAnd(cloudBitMask).eq(0)
+    .and(qa.bitwiseAnd(cirrusBitMask).eq(0));
+  <span class="text-tertiary">return</span> image.updateMask(mask).divide(10000);
+}
+
+<span class="text-primary font-bold">// 2. Temporal Window Ingestion &amp; NBR Computation</span>
+<span class="text-tertiary">var</span> preFire = ee.ImageCollection(<span class="text-[#a5d6ff]'COPERNICUS/S2_SR'&lt;/span&gt;) .filterBounds(aoi) .filterDate(&lt;span class=" span="" text-[#a5d6ff]'2024-07-15'<="">, <span class="text-[#a5d6ff]'2024-07-30'&lt;/span&gt;) .map(maskS2clouds) .median(); &lt;span class=" text-tertiary"="">var</span> postFire = ee.ImageCollection(<span class="text-[#a5d6ff]'COPERNICUS/S2_SR'&lt;/span&gt;) .filterBounds(aoi) .filterDate(&lt;span class=" span="" text-[#a5d6ff]'2024-09-18'<="">, <span class="text-[#a5d6ff]'2024-09-25'&lt;/span&gt;) .map(maskS2clouds) .median(); &lt;span class=" text-tertiary"="">var</span> nbrPre  = preFire.normalizedDifference([<span class="text-[#a5d6ff]'B8A'&lt;/span&gt;, &lt;span class=" span="" text-[#a5d6ff]'b12'<="">]).rename(<span class="text-[#a5d6ff]'nbr_pre'&lt;/span&gt;); &lt;span class=" text-tertiary"="">var</span> nbrPost = postFire.normalizedDifference([<span class="text-[#a5d6ff]'B8A'&lt;/span&gt;, &lt;span class=" span="" text-[#a5d6ff]'b12'<="">]).rename(<span class="text-[#a5d6ff]'nbr_post'&lt;/span&gt;); &lt;span class=" font-bold"="" text-primary="">// 3. Differenced Normalized Burn Ratio &amp; Scaling</span>
+<span class="text-tertiary">var</span> dNBR = nbrPre.subtract(nbrPost).multiply(1000).rename(<span class="text-[#a5d6ff]'dNBR'&lt;/span&gt;); &lt;span class=" font-bold"="" text-primary="">// 4. Export Raster to Cloud Storage for ArcPy Cartography</span>
+Export.image.toDrive({
+  image: dNBR.clip(aoi),
+  description: <span class="text-[#a5d6ff]'SierraCreek_dNBR_10m'&lt;/span&gt;, scale: 10, region: aoi, crs: &lt;span class=" span="" text-[#a5d6ff]'epsg:32610'<="">,
+  maxPixels: 1e9
+});</span></span></span></span></span></code></pre>
+</div>
+</div>
+</section>
+<!-- Next Steps & Deliverable Actions (Tomasz Gajda Action Block) -->
+<section class="w-full bg-[#f7f8fa] pb-24">
+<div class="max-w-6xl mx-auto px-6">
+<div class="p-10 bg-surface shadow-md flex flex-col md:flex-row items-center justify-between gap-8">
+<div>
+<div class="font-telemetry-mono text-label-xs text-primary font-bold uppercase tracking-widest mb-2">Project Artifacts</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase font-bold mb-2">Ready to audit spatial data layers?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+            Download the raw calibrated 10m GeoTIFF layer or browse the full automated processing repository on GitHub.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-4">
+<a class="px-6 py-3 bg-surface-container-high text-on-surface font-telemetry-mono text-telemetry-mono uppercase tracking-widest hover:bg-on-surface hover:text-surface transition-all" href="https://github.com" rel="noopener" target="_blank">
+            View GitHub Repo
+          </a>
+<a class="px-6 py-3 bg-primary-container text-on-primary font-telemetry-mono text-telemetry-mono uppercase tracking-widest hover:bg-secondary-container transition-all" href="../index.html#portfolio">
+            Next Project →
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for copying code
+  document.getElementById('copy-code-btn')?.addEventListener('click', function() {
+    const code = document.querySelector('code')?.innerText || '';
+    navigator.clipboard.writeText(code).then(() => {
+      const originalText = this.innerText;
+      this.innerText = 'COPIED TO CLIPBOARD!';
+      setTimeout(() => {
+        this.innerText = originalText;
+      }, 2000);
+    });
+  });
+</script></main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-neutral-950 text-white py-16 border-t border-neutral-800" data-purpose="site-footer">
+<div class="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
+<!-- Back to Top Arrow matching Tomasz Gajda footer arrow button -->
+<a aria-label="Back to Top" class="w-12 h-12 bg-neutral-800 hover:bg-neutral-700 text-white flex items-center justify-center mb-8 border border-neutral-700 transition-colors" href="#">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<!-- Footer Monogram -->
+<div class="text-lg font-black tracking-widest mb-4">
+        ABDUL HALEEM KHAN
+      </div>
+<p class="text-xs text-neutral-400 tracking-wider uppercase mb-8 max-w-md">
+        Geographical Information Systems • Remote Sensing Science • Automated Spatial ETL Pipelines
+      </p>
+<!-- Footer Social Links -->
+<div class="flex items-center space-x-6 mb-8 text-neutral-400 text-xs font-bold tracking-widest uppercase">
+<a class="hover:text-white transition-colors" href="https://linkedin.com" rel="noopener" target="_blank">LinkedIn</a>
+<a class="hover:text-white transition-colors" href="https://github.com" rel="noopener" target="_blank">GitHub</a>
+<a class="hover:text-white transition-colors" href="mailto:ahaleem.spatial@outlook.com">Email</a>
+<a class="hover:text-white transition-colors" href="../index.html#about">Bio</a>
+</div>
+<!-- Copyright Notice -->
+<p class="text-[11px] text-neutral-500 font-mono tracking-wider">
+        © 2026 Abdul Haleem Khan.  All rights reserved.
+      </p>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: JavaScript Functionality -->
+<script data-purpose="portfolio-filtering">
+    // Filtering logic for the project gallery
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filterValue = button.getAttribute('data-filter');
+
+          // Toggle active styling on buttons
+          filterButtons.forEach(btn => {
+            btn.classList.remove('bg-neutral-900', 'text-white');
+            btn.classList.add('border', 'border-neutral-300', 'text-neutral-600');
+          });
+          button.classList.remove('border', 'border-neutral-300', 'text-neutral-600');
+          button.classList.add('bg-neutral-900', 'text-white');
+
+          // Filter card visibility
+          projectCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+            if (filterValue === 'all' || cardCategory === filterValue) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+<script data-purpose="mobile-menu-toggle">
+    // Simple toggle for the responsive mobile header drawer
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when a navigation item is clicked
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+  </script>
+<!-- END: JavaScript Functionality -->
+</body></html>

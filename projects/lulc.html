@@ -1,0 +1,429 @@
+<!DOCTYPE html><html class="light" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>AHK // Abdul Haleem Khan - Land Use Land Cover (LULC) Classification</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;background-color:#ffffff;color:#000000;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ["Inter", "sans-serif"],
+          mono: ["JetBrains Mono", "monospace"]
+        }
+      }
+    }
+  };</script></head><body class="bg-white text-black font-sans antialiased min-h-screen selection:bg-black selection:text-white"><header class="fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-black"><div class="h-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between"><div class="flex items-center gap-3"><a class="font-mono text-sm tracking-wider font-extrabold uppercase text-black hover:opacity-70 transition-opacity" data-path="portfolio" href="#">AHK // Abdul Haleem Khan</a></div><nav class="hidden md:flex items-center gap-6 text-xs font-mono font-bold tracking-widest uppercase"><a class="text-neutral-600 hover:text-black transition-colors" data-path="about-me" href="#">About Me</a><a class="text-neutral-600 hover:text-black transition-colors" data-path="experience" href="#">Experience</a><a class="text-neutral-600 hover:text-black transition-colors" data-path="skills" href="#">Skills</a><a class="text-neutral-600 hover:text-black transition-colors" data-path="education" href="#">Education</a><a class="text-neutral-600 hover:text-black transition-colors" data-path="portfolio" href="#">Portfolio</a><a aria-current="page" class="bg-black text-white px-3 py-1.5 transition-colors" data-path="case-study" href="#">Case Study</a></nav><div class="flex items-center gap-4"><a class="inline-flex items-center justify-center px-4 py-1.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-all duration-150" data-path="contact" href="#">Contact</a></div></div></header><main class="w-full pt-20 bg-white min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full text-black">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col gap-10">
+<!-- NAVIGATION / TOP META BAR -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b-2 border-black">
+<a class="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-wider text-black hover:opacity-70 transition-opacity" data-path="portfolio" href="#">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+    BACK TO PORTFOLIO
+  </a>
+<div class="flex flex-wrap items-center gap-3 font-mono text-xs font-bold">
+<span class="px-3 py-1 border-2 border-black bg-neutral-100 text-black tracking-widest uppercase">
+      CATEGORY A — REMOTE SENSING // SUPERVISED CLASSIFICATION
+    </span>
+<span class="px-3 py-1 border-2 border-black bg-white text-black tracking-wider uppercase">
+      REF: CS-2025-GEE-LULC-02
+    </span>
+</div>
+</div>
+<!-- MAIN HEADER BLOCK -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-neutral-600">
+<span class="w-2.5 h-2.5 bg-black"></span>
+<span class="">GEOSPATIAL INTELLIGENCE DOSSIER // DEPLOYED SCRIPT</span>
+</div>
+<h1 class="text-3xl md:text-5xl font-extrabold text-black tracking-tight uppercase max-w-5xl">
+    Land Use Land Cover (LULC) Classification &amp; Terrain Analysis
+  </h1>
+<p class="text-base text-neutral-700 max-w-4xl leading-relaxed">
+    Regional satellite-derived surface cover classification, multi-temporal Sentinel-2 imagery processing, Random Forest supervised learning, and high-accuracy geospatial validation powered by Google Earth Engine.
+  </p>
+<!-- ACTION BUTTONS -->
+<div class="flex flex-wrap items-center gap-3 pt-2">
+<a class="inline-flex items-center gap-2 px-4 py-2.5 border-2 border-black bg-white hover:bg-black hover:text-white text-black font-mono text-xs font-bold uppercase tracking-wider transition-all duration-150" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+      VIEW GITHUB REPOSITORY
+    </a>
+<a class="inline-flex items-center gap-2 px-4 py-2.5 border-2 border-black bg-black hover:bg-neutral-800 text-white font-mono text-xs font-bold uppercase tracking-wider transition-all duration-150" href="https://code.earthengine.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+      LAUNCH EARTH ENGINE SCRIPT
+    </a>
+<button class="inline-flex items-center gap-2 px-4 py-2.5 border-2 border-black bg-white hover:bg-neutral-100 text-black font-mono text-xs font-bold uppercase tracking-wider transition-all duration-150">
+<span class="material-symbols-outlined text-[18px]">download</span>
+      DOWNLOAD CLASSIFICATION GEOJSON (18.6 MB)
+    </button>
+</div>
+</div>
+<!-- FEATURED CARTOGRAPHIC SHOWCASE -->
+<div class="flex flex-col bg-white border-2 border-black overflow-hidden shadow-[4px_4px_0_0_#000]">
+<!-- Cartographic Neatline Bar -->
+<div class="px-4 py-2.5 bg-neutral-100 border-b-2 border-black flex flex-col sm:flex-row sm:items-center justify-between gap-2 font-mono text-xs">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-black text-white font-bold tracking-widest text-[11px]">PLATE 05</span>
+<span class="text-black font-bold tracking-wider uppercase">MULTI-TEMPORAL SENTINEL-2 LULC CLASSIFICATION EXTENT</span>
+</div>
+<div class="text-neutral-600 uppercase tracking-widest text-[11px] font-semibold">
+      CRS: WGS 84 / UTM ZONE 32N (EPSG:32632) | GEE CLOUD HARMONIZED
+    </div>
+</div>
+<!-- Main Visual Placeholder (IMAGE_22) -->
+<div class="relative w-full aspect-[16/9] bg-neutral-100 overflow-hidden border-b-2 border-black"><img src="https://lh3.googleusercontent.com/aida/AEtjO1W4Up9Y6AH5jScpnEwE2cVVXo2_HjnMYyeqGgDQoWgviPTa1ODogNh4pSAPyTUWDA9qhK2vr46IiRZoZS48m8XHbiscQ6tHvjcJ81yJrtad9yO5Dl-p4vvc8ktycdOp5if-_qLjY_3QM8dzT_aVLkR7GHthYT4zV-Dg4bL4tXFAcdkhoknqZB1aEVBFC6iAMKcpNpqIXFcdzMuhz8kD5HAOKTL3qvaS-159C77RB6vOv8zGKdl5bzGVXTg" alt="Land Use Land Cover (LULC) Sentinel-2 Classification Map" class="w-full h-full object-cover"><div class="absolute bottom-4 left-4 bg-white/95 border-2 border-black px-3 py-1.5 flex items-center gap-3 font-mono text-xs font-bold text-black shadow-[2px_2px_0_0_#000]"><span class="flex items-center gap-1.5"><span class="w-2 h-2 bg-black animate-pulse"></span> S2-L2A TOA MASKED</span><span class="text-neutral-600 border-l border-black pl-3 font-medium">RGB(B4,B3,B2) + RF 5-CLASS</span></div></div>
+<!-- Metadata Strip Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-black font-mono text-xs">
+<div class="bg-white p-4 flex flex-col gap-1">
+<span class="text-neutral-500 uppercase text-[10px] tracking-wider font-bold">SENSOR PLATFORM</span>
+<span class="text-black font-bold">Sentinel-2A/B MSI Multi-Band Composite</span>
+</div>
+<div class="bg-white p-4 flex flex-col gap-1">
+<span class="text-neutral-500 uppercase text-[10px] tracking-wider font-bold">TRAINING SAMPLES</span>
+<span class="text-black font-bold">2,450 Polygons (Random Forest)</span>
+</div>
+<div class="bg-white p-4 flex flex-col gap-1">
+<span class="text-neutral-500 uppercase text-[10px] tracking-wider font-bold">OVERALL ACCURACY</span>
+<span class="text-black font-bold">94.2% (Overall Kappa: 0.918)</span>
+</div>
+<div class="bg-white p-4 flex flex-col gap-1">
+<span class="text-neutral-500 uppercase text-[10px] tracking-wider font-bold">SPATIAL EXTENT</span>
+<span class="text-black font-bold">124,500 Hectares (River Basin)</span>
+</div>
+</div>
+</div>
+<!-- TECHNICAL METRICS GRID (4 CARDS) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 01 -->
+<div class="flex flex-col justify-between p-6 bg-white border-2 border-black shadow-[4px_4px_0_0_#000] hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#000] transition-all">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between pb-2 border-b border-neutral-300">
+<span class="font-mono text-xs font-bold text-neutral-500 tracking-wider">METRIC 01</span>
+<span class="material-symbols-outlined text-black text-[18px]">verified</span>
+</div>
+<div class="text-4xl font-extrabold text-black tracking-tight pt-1">94.2%</div>
+<div class="text-sm font-bold text-black uppercase tracking-wider">OVERALL MODEL ACCURACY</div>
+<p class="text-xs text-neutral-600 leading-relaxed pt-1">
+        Random Forest algorithm with 150 decision trees trained across 2,450 ground-truth verification regions with 70/30 split validation.
+      </p>
+</div>
+<div class="pt-3 mt-4 border-t-2 border-black font-mono text-xs font-bold text-black uppercase">
+    Kappa Coefficient: 0.918
+  </div>
+</div>
+<!-- Card 02 -->
+<div class="flex flex-col justify-between p-6 bg-white border-2 border-black shadow-[4px_4px_0_0_#000] hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#000] transition-all">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between pb-2 border-b border-neutral-300">
+<span class="font-mono text-xs font-bold text-neutral-500 tracking-wider">METRIC 02</span>
+<span class="material-symbols-outlined text-black text-[18px]">grid_4x4</span>
+</div>
+<div class="text-4xl font-extrabold text-black tracking-tight pt-1">10m</div>
+<div class="text-sm font-bold text-black uppercase tracking-wider">GROUND RESOLUTION</div>
+<p class="text-xs text-neutral-600 leading-relaxed pt-1">
+        Multi-spectral surface reflectance bands (Blue, Green, Red, NIR, SWIR-1, SWIR-2) resampled and cloud-masked at native 10-meter resolution.
+      </p>
+</div>
+<div class="pt-3 mt-4 border-t-2 border-black font-mono text-xs font-bold text-black uppercase">
+    Sentinel-2 Level-2A BOA
+  </div>
+</div>
+<!-- Card 03 -->
+<div class="flex flex-col justify-between p-6 bg-white border-2 border-black shadow-[4px_4px_0_0_#000] hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#000] transition-all">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between pb-2 border-b border-neutral-300">
+<span class="font-mono text-xs font-bold text-neutral-500 tracking-wider">METRIC 03</span>
+<span class="material-symbols-outlined text-black text-[18px]">layers</span>
+</div>
+<div class="text-4xl font-extrabold text-black tracking-tight pt-1">5 CLASSES</div>
+<div class="text-sm font-bold text-black uppercase tracking-wider">THEMATIC TAXONOMY</div>
+<p class="text-xs text-neutral-600 leading-relaxed pt-1">
+        High-precision segmentation separating Dense Forest, Agricultural Cropland, Urban Impervious Surfaces, Water Bodies, and Barren Scrub.
+      </p>
+</div>
+<div class="pt-3 mt-4 border-t-2 border-black font-mono text-xs font-bold text-black uppercase">
+    Corine Land Cover Standard
+  </div>
+</div>
+<!-- Card 04 -->
+<div class="flex flex-col justify-between p-6 bg-white border-2 border-black shadow-[4px_4px_0_0_#000] hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#000] transition-all">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between pb-2 border-b border-neutral-300">
+<span class="font-mono text-xs font-bold text-neutral-500 tracking-wider">METRIC 04</span>
+<span class="material-symbols-outlined text-black text-[18px]">speed</span>
+</div>
+<div class="text-4xl font-extrabold text-black tracking-tight pt-1">&lt; 4.2s</div>
+<div class="text-sm font-bold text-black uppercase tracking-wider">GEE CLOUD INFERENCE</div>
+<p class="text-xs text-neutral-600 leading-relaxed pt-1">
+        Headless distributed cloud processing executing cloud/cirrus QA60 masking, NDVI/NDWI spectral feature extraction, and tile export in parallel.
+      </p>
+</div>
+<div class="pt-3 mt-4 border-t-2 border-black font-mono text-xs font-bold text-black uppercase">
+    Google Earth Engine V8
+  </div>
+</div>
+</div>
+<!-- SUPERVISED CLASSIFICATION & FEATURE ARCHITECTURE -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 bg-black text-white font-mono text-xs uppercase font-bold tracking-wider">
+      METHODOLOGY
+    </span>
+<h2 class="text-xl md:text-2xl font-extrabold uppercase tracking-tight text-black">
+      Supervised Classification &amp; Feature Extraction Architecture
+    </h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+<!-- Left Box: Indices -->
+<div class="flex flex-col bg-white border-2 border-black p-6 gap-4 shadow-[4px_4px_0_0_#000]">
+<div class="flex items-center justify-between pb-3 border-b-2 border-black">
+<span class="font-bold text-sm text-black uppercase tracking-wider">
+        SPECTRAL FEATURE INDICES &amp; TRAINING REGIMES
+      </span>
+<span class="material-symbols-outlined text-black text-[20px]">filter_vintage</span>
+</div>
+<p class="text-xs text-neutral-600 leading-relaxed">
+      To decouple highly reflective urban artifacts from seasonal dry agricultural fields, we generated band-ratio mathematical products within Google Earth Engine and stacked them directly onto native multi-spectral channels before Random Forest bootstrapping.
+    </p>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-mono text-xs border-collapse">
+<thead>
+<tr class="text-black uppercase bg-neutral-100 border-y-2 border-black font-bold">
+<th class="p-2.5">Band / Index</th>
+<th class="p-2.5">Spectral Formula</th>
+<th class="p-2.5">Thematic Sensitivity</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-neutral-200">
+<tr class="hover:bg-neutral-50">
+<td class="p-2.5 font-bold text-black">NDVI</td>
+<td class="p-2.5 text-neutral-800">(B8 - B4) / (B8 + B4)</td>
+<td class="p-2.5 font-sans text-neutral-600">Canopy vigor &amp; dense vegetation</td>
+</tr>
+<tr class="hover:bg-neutral-50">
+<td class="p-2.5 font-bold text-black">NDWI</td>
+<td class="p-2.5 text-neutral-800">(B3 - B8) / (B3 + B8)</td>
+<td class="p-2.5 font-sans text-neutral-600">Open water, wetlands &amp; tributaries</td>
+</tr>
+<tr class="hover:bg-neutral-50">
+<td class="p-2.5 font-bold text-black">NDBI</td>
+<td class="p-2.5 text-neutral-800">(B11 - B8) / (B11 + B8)</td>
+<td class="p-2.5 font-sans text-neutral-600">Impervious surfaces &amp; urban core</td>
+</tr>
+<tr class="hover:bg-neutral-50">
+<td class="p-2.5 font-bold text-black">B12 (SWIR-2)</td>
+<td class="p-2.5 text-neutral-800">2190nm Reflectance</td>
+<td class="p-2.5 font-sans text-neutral-600">Soil moisture &amp; fallow cropland</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Right Box: Confusion Matrix -->
+<div class="flex flex-col bg-white border-2 border-black p-6 gap-4 shadow-[4px_4px_0_0_#000]">
+<div class="flex items-center justify-between pb-3 border-b-2 border-black">
+<span class="font-bold text-sm text-black uppercase tracking-wider">
+        CONFUSION MATRIX &amp; THEMATIC CLASS METRICS
+      </span>
+<span class="material-symbols-outlined text-black text-[20px]">analytics</span>
+</div>
+<p class="text-xs text-neutral-600 leading-relaxed">
+      Calculated over a stratified 30% independent testing dataset (735 ground-truth polygons) derived via high-resolution orthophoto manual delineation and field sampling surveys.
+    </p>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-mono text-xs border-collapse">
+<thead>
+<tr class="text-black uppercase bg-neutral-100 border-y-2 border-black font-bold">
+<th class="p-2.5">LULC Class</th>
+<th class="p-2.5">Spatial Area (ha)</th>
+<th class="p-2.5">Producer's</th>
+<th class="p-2.5">User's</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-neutral-200">
+<tr class="hover:bg-neutral-50">
+<td class="p-2.5 font-bold text-black flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-neutral-900 border border-black"></span> Urban Built-Up
+      </td>
+<td class="p-2.5 text-neutral-700">28,450 (22.8%)</td>
+<td class="p-2.5 font-bold text-black">92.4%</td>
+<td class="p-2.5 font-bold text-black">93.1%</td>
+</tr>
+<tr class="hover:bg-neutral-50">
+<td class="p-2.5 font-bold text-black flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-neutral-700 border border-black"></span> Dense Forest
+      </td>
+<td class="p-2.5 text-neutral-700">46,200 (37.1%)</td>
+<td class="p-2.5 font-bold text-black">96.8%</td>
+<td class="p-2.5 font-bold text-black">95.7%</td>
+</tr>
+<tr class="hover:bg-neutral-50">
+<td class="p-2.5 font-bold text-black flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-neutral-500 border border-black"></span> Agricultural Land
+      </td>
+<td class="p-2.5 text-neutral-700">34,120 (27.4%)</td>
+<td class="p-2.5 font-bold text-black">93.5%</td>
+<td class="p-2.5 font-bold text-black">92.8%</td>
+</tr>
+<tr class="hover:bg-neutral-50">
+<td class="p-2.5 font-bold text-black flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-neutral-300 border border-black"></span> Inland Water Bodies
+      </td>
+<td class="p-2.5 text-neutral-700">10,850 (8.7%)</td>
+<td class="p-2.5 font-bold text-black">98.2%</td>
+<td class="p-2.5 font-bold text-black">97.9%</td>
+</tr>
+<tr class="hover:bg-neutral-50">
+<td class="p-2.5 font-bold text-black flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-white border border-black"></span> Barren / Scrub
+      </td>
+<td class="p-2.5 text-neutral-700">4,880 (4.0%)</td>
+<td class="p-2.5 font-bold text-black">89.1%</td>
+<td class="p-2.5 font-bold text-black">90.4%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- CODE SNIPPET WORKFLOW -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 bg-black text-white font-mono text-xs uppercase font-bold tracking-wider">
+      SCRIPT TELEMETRY
+    </span>
+<h2 class="text-xl md:text-2xl font-extrabold uppercase tracking-tight text-black">
+      Earth Engine Python / JS Cloud Pipeline
+    </h2>
+</div>
+<div class="w-full bg-white border-2 border-black shadow-[4px_4px_0_0_#000] overflow-hidden">
+<!-- Terminal Header -->
+<div class="px-4 py-3 bg-neutral-100 border-b-2 border-black flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full border border-black bg-black inline-block"></span>
+<span class="w-3 h-3 rounded-full border border-black bg-neutral-400 inline-block"></span>
+<span class="w-3 h-3 rounded-full border border-black bg-white inline-block"></span>
+<span class="ml-2 font-mono text-xs font-bold uppercase tracking-widest text-black">
+        GEE API // PYTHON EE // SENTINEL-2 LULC PIPELINE
+      </span>
+</div>
+<button class="font-mono text-xs font-bold text-black hover:bg-black hover:text-white px-2.5 py-1 border border-black uppercase transition-colors flex items-center gap-1.5" onclick="navigator.clipboard.writeText(document.getElementById('gee-code-snippet').innerText)">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> COPY CODE
+    </button>
+</div>
+<!-- Code Block -->
+<pre class="p-6 overflow-x-auto font-mono text-xs text-neutral-900 bg-white leading-relaxed"><code id="gee-code-snippet"><span class="text-neutral-500">// Google Earth Engine Sentinel-2 Random Forest LULC Pipeline</span>
+<span class="text-neutral-500">// Author: Abdul Haleem Khan | GIS Analyst &amp; Remote Sensing Specialist</span>
+
+<span class="font-bold text-black">var</span> aoi = ee.Geometry.Polygon([...]); <span class="text-neutral-500">// Regional Watershed Boundary</span>
+<span class="font-bold text-black">var</span> s2 = ee.ImageCollection(<span class="text-neutral-800 font-semibold">'COPERNICUS/S2_SR_HARMONIZED'</span>)
+  .filterBounds(aoi)
+  .filterDate(<span class="text-neutral-800 font-semibold">'2024-05-01'</span>, <span class="text-neutral-800 font-semibold">'2024-09-30'</span>)
+  .filter(ee.Filter.lt(<span class="text-neutral-800 font-semibold">'CLOUDY_PIXEL_PERCENTAGE'</span>, <span class="font-bold">15</span>))
+  .map(<span class="font-bold text-black">function</span>(img) {
+    <span class="font-bold text-black">var</span> qa = img.select(<span class="text-neutral-800 font-semibold">'QA60'</span>);
+    <span class="font-bold text-black">var</span> mask = qa.bitwiseAnd(<span class="font-bold">1</span> &lt;&lt; <span class="font-bold">10</span>).or(qa.bitwiseAnd(<span class="font-bold">1</span> &lt;&lt; <span class="font-bold">11</span>)).not();
+    <span class="font-bold text-black">return</span> img.updateMask(mask).divide(<span class="font-bold">10000</span>);
+  });
+
+<span class="text-neutral-500">// Extract Median Surface Composite &amp; Spectral Indices</span>
+<span class="font-bold text-black">var</span> composite = s2.median().clip(aoi);
+<span class="font-bold text-black">var</span> ndvi = composite.normalizedDifference([<span class="text-neutral-800 font-semibold">'B8'</span>, <span class="text-neutral-800 font-semibold">'B4'</span>]).rename(<span class="text-neutral-800 font-semibold">'NDVI'</span>);
+<span class="font-bold text-black">var</span> ndwi = composite.normalizedDifference([<span class="text-neutral-800 font-semibold">'B3'</span>, <span class="text-neutral-800 font-semibold">'B8'</span>]).rename(<span class="text-neutral-800 font-semibold">'NDWI'</span>);
+<span class="font-bold text-black">var</span> ndbi = composite.normalizedDifference([<span class="text-neutral-800 font-semibold">'B11'</span>, <span class="text-neutral-800 font-semibold">'B8'</span>]).rename(<span class="text-neutral-800 font-semibold">'NDBI'</span>);
+<span class="font-bold text-black">var</span> featureStack = composite.select([<span class="text-neutral-800 font-semibold">'B2'</span>,<span class="text-neutral-800 font-semibold">'B3'</span>,<span class="text-neutral-800 font-semibold">'B4'</span>,<span class="text-neutral-800 font-semibold">'B8'</span>,<span class="text-neutral-800 font-semibold">'B11'</span>,<span class="text-neutral-800 font-semibold">'B12'</span>])
+  .addBands([ndvi, ndwi, ndbi]);
+
+<span class="text-neutral-500">// Train Supervised Random Forest Classifier (150 Trees)</span>
+<span class="font-bold text-black">var</span> training = featureStack.sampleRegions({
+  collection: trainingPolygons,
+  properties: [<span class="text-neutral-800 font-semibold">'class_code'</span>],
+  scale: <span class="font-bold">10</span>
+});
+<span class="font-bold text-black">var</span> classifier = ee.Classifier.smileRandomForest(<span class="font-bold">150</span>).train(training, <span class="text-neutral-800 font-semibold">'class_code'</span>);
+<span class="font-bold text-black">var</span> classified = featureStack.classify(classifier);
+
+<span class="text-neutral-500">// Validation against 30% Test Dataset</span>
+<span class="font-bold text-black">var</span> testAccuracy = classified.errorMatrix(<span class="text-neutral-800 font-semibold">'class_code'</span>, <span class="text-neutral-800 font-semibold">'classification'</span>);
+print(<span class="text-neutral-800 font-semibold">'Overall Kappa:'</span>, testAccuracy.kappa());
+print(<span class="text-neutral-800 font-semibold">'Accuracy Matrix:'</span>, testAccuracy.accuracy());</code></pre>
+</div>
+</div>
+<!-- DELIVERABLES SECTION -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 bg-black text-white font-mono text-xs uppercase font-bold tracking-wider">
+      EXPORTS
+    </span>
+<h2 class="text-xl md:text-2xl font-extrabold uppercase tracking-tight text-black">
+      Project Deliverables &amp; Downloads
+    </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="flex flex-col justify-between p-6 bg-white border-2 border-black shadow-[4px_4px_0_0_#000] hover:shadow-[6px_6px_0_0_#000] hover:-translate-y-0.5 transition-all">
+<div class="flex flex-col gap-2">
+<span class="font-mono text-xs font-bold text-neutral-500 uppercase tracking-wider">RASTER DATASET</span>
+<h3 class="text-base font-extrabold text-black uppercase">
+        CLASSIFIED RASTER GEOTIFF (10M LZW)
+      </h3>
+<p class="text-xs text-neutral-600 leading-relaxed pt-1">
+        10-meter resolution Cloud-Optimized GeoTIFF with embedded color table and metadata headers.
+      </p>
+</div>
+<a class="pt-4 mt-4 border-t-2 border-black inline-flex items-center justify-between font-mono text-xs uppercase text-black font-bold group" href="#">
+<span class="">DOWNLOAD GEOTIFF (42.4 MB)</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col justify-between p-6 bg-white border-2 border-black shadow-[4px_4px_0_0_#000] hover:shadow-[6px_6px_0_0_#000] hover:-translate-y-0.5 transition-all">
+<div class="flex flex-col gap-2">
+<span class="font-mono text-xs font-bold text-neutral-500 uppercase tracking-wider">VECTOR TOPOLOGY</span>
+<h3 class="text-base font-extrabold text-black uppercase">
+        VECTORIZED LAND PARCELS (GEOPACKAGE)
+      </h3>
+<p class="text-xs text-neutral-600 leading-relaxed pt-1">
+        Topology-sanitized vector polygons grouped by land classification codes with area calculations.
+      </p>
+</div>
+<a class="pt-4 mt-4 border-t-2 border-black inline-flex items-center justify-between font-mono text-xs uppercase text-black font-bold group" href="#">
+<span class="">DOWNLOAD GPKG (18.6 MB)</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col justify-between p-6 bg-white border-2 border-black shadow-[4px_4px_0_0_#000] hover:shadow-[6px_6px_0_0_#000] hover:-translate-y-0.5 transition-all">
+<div class="flex flex-col gap-2">
+<span class="font-mono text-xs font-bold text-neutral-500 uppercase tracking-wider">TECHNICAL AUDIT</span>
+<h3 class="text-base font-extrabold text-black uppercase">
+        ACCURACY ASSESSMENT REPORT (PDF)
+      </h3>
+<p class="text-xs text-neutral-600 leading-relaxed pt-1">
+        Complete 24-page scientific technical documentation including confusion matrix and error variance statistics.
+      </p>
+</div>
+<a class="pt-4 mt-4 border-t-2 border-black inline-flex items-center justify-between font-mono text-xs uppercase text-black font-bold group" href="#">
+<span class="">DOWNLOAD REPORT (6.2 MB)</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- FOOTER BIDIRECTIONAL NAVIGATION -->
+<div class="pt-6 border-t-2 border-black flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs">
+<a class="flex items-center gap-2 text-black hover:opacity-70 transition-opacity uppercase text-left group" data-path="case-study" href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">west</span>
+<div class="flex flex-col">
+<span class="text-[10px] text-neutral-500 font-bold">PLATE 04</span>
+<span class="font-extrabold">CASCADE PEAKS NPS TOPOGRAPHIC MAPPING</span>
+</div>
+</a>
+<a class="flex items-center gap-2 text-black hover:opacity-70 transition-opacity uppercase text-right group" data-path="case-study" href="#">
+<div class="flex flex-col">
+<span class="text-[10px] text-neutral-500 font-bold">PLATE 01</span>
+<span class="font-extrabold">RIYADH CADASTRAL &amp; POSTAL BOUNDARY MAPPING</span>
+</div>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">east</span>
+</a>
+</div>
+</div>
+</div></main><footer class="w-full bg-black text-white py-12 border-t-2 border-black"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-8 border-b border-neutral-800"><div class="flex flex-col gap-2 text-center md:text-left"><div class="flex items-center gap-3 justify-center md:justify-start"><span class="text-base font-extrabold uppercase tracking-wider text-white">AHK // Abdul Haleem Khan</span><span class="px-2 py-0.5 border border-white text-white font-mono text-[10px] uppercase tracking-widest font-bold">GIS &amp; Remote Sensing</span></div><p class="text-xs text-neutral-400">High-precision geospatial modeling, earth observation pipelines &amp; computational cartography.</p></div><div class="flex items-center gap-6"><a class="font-mono text-xs uppercase tracking-wider text-neutral-400 hover:text-white transition-colors" data-path="contact" href="#">LinkedIn</a><a class="font-mono text-xs uppercase tracking-wider text-neutral-400 hover:text-white transition-colors" data-path="portfolio" href="#">GitHub</a><a class="font-mono text-xs uppercase tracking-wider text-neutral-400 hover:text-white transition-colors" data-path="contact" href="#">Email</a><a class="font-mono text-xs uppercase tracking-wider text-neutral-400 hover:text-white transition-colors" data-path="about-me" href="#">Bio</a><button aria-label="Scroll to top" class="w-8 h-8 border border-white hover:bg-white hover:text-black text-white flex items-center justify-center transition-colors" onclick="window.scrollTo({top:0,behavior:'smooth'})"><span class="material-symbols-outlined text-[16px]">arrow_upward</span></button></div></div><div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 font-mono text-[11px] text-neutral-400"><span class="uppercase tracking-wider">© 2025 Abdul Haleem Khan. All rights reserved.</span><span class="uppercase tracking-widest text-neutral-500">EPSG:4326 // WGS 84 DATUM</span></div></div></footer>
+
+</body></html>

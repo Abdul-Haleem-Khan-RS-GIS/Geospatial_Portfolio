@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Abdul Haleem Khan | GIS Analyst &amp; Remote Sensing Specialist</title>
+<meta content="Portfolio of Abdul Haleem Khan - GIS Analyst, Remote Sensing Specialist, and Geospatial Data Engineer." name="description"/>
+<!-- Google Fonts: Montserrat & Inter for precise Tomasz Gajda typographic styling -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            mono: ['Space Grotesk', 'monospace'],
+          },
+          colors: {
+            darkbg: '#121214',
+            surface: '#1b1b1f',
+            charcoal: '#222328',
+            accent: '#0d9488', // Emerald/Teal GIS vibe
+            accentHover: '#0f766e',
+            subtle: '#8e8f96'
+          },
+          letterSpacing: {
+            widestPlus: '0.25em',
+            mega: '0.35em'
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="base-styling">
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f7f8fa;
+      color: #1a1a1e;
+      overflow-x: hidden;
+    }
+    
+    /* Tomasz Gajda Signature Section Frame Box */
+    .section-title-badge {
+      display: inline-block;
+      border: 3px solid #1a1a1e;
+      padding: 0.65rem 2.5rem;
+      letter-spacing: 0.28em;
+      font-weight: 700;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      background: transparent;
+      position: relative;
+    }
+
+    .section-divider-line {
+      width: 70px;
+      height: 3px;
+      background-color: #1a1a1e;
+      margin: 1.5rem auto 2.5rem auto;
+    }
+
+    /* Subtle grid pattern background for hero */
+    .hero-grid-pattern {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    }
+  </style>
+<style data-purpose="interactive-cards">
+    .skill-card {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid #e5e7eb;
+      background-color: #ffffff;
+    }
+    .skill-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);
+      border-color: #1a1a1e;
+    }
+
+    .project-card {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+<!-- END: Custom Styles -->
+<meta content="web_standard" name="shell-type"/></head>
+<body class="antialiased selection:bg-neutral-900 selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#f7f8fa]/90 backdrop-blur-md border-b border-gray-200/80 transition-all duration-300" data-purpose="site-navigation">
+<div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Monogram / Logo -->
+<a class="flex items-center gap-2 group focus:outline-none" href="#">
+<div class="w-10 h-10 bg-neutral-900 text-white flex items-center justify-center font-extrabold text-lg tracking-tighter group-hover:bg-accent transition-colors">
+          AHK
+        </div>
+<span class="font-bold text-sm tracking-widest uppercase hidden sm:inline-block">Abdul Haleem KHAN</span>
+</a>
+<!-- Desktop Nav Links -->
+<nav aria-label="Main Navigation" class="hidden md:flex items-center space-x-8 text-xs font-bold tracking-widest uppercase">
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#about">About Me</a><a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#experience">Experience</a>
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#skills">Skills</a>
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#education">Education</a>
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#portfolio">Portfolio</a>
+<a class="px-5 py-2.5 border-2 border-neutral-900 text-neutral-900 hover:bg-neutral-900 hover:text-white transition-all duration-200" href="../index.html#contact">Contact</a>
+</nav>
+<!-- Language / Region Switcher (Inspired by ENG / PL from Reference) -->
+</div>
+<!-- Mobile Navigation Drawer -->
+<div class="hidden md:hidden border-b border-neutral-200 bg-white px-6 py-6 transition-all" id="mobile-menu">
+<div class="flex flex-col space-y-4 text-center font-bold text-xs uppercase tracking-widest">
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#about">About Me</a><a class="py-2 text-neutral-800 hover:text-black" href="../index.html#experience">Experience</a>
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#skills">Skills</a>
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#education">Education</a>
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#portfolio">Portfolio</a>
+<a class="py-2 bg-neutral-900 text-white rounded mt-2" href="../index.html#contact">Contact</a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main><div class="flex flex-col w-full">
+<!-- Top Navigation & Breadcrumb Header -->
+<section class="w-full bg-[#f7f8fa] py-8 border-b border-neutral-200">
+<div class="max-w-6xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<!-- Back Link -->
+<a class="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-neutral-900 uppercase hover:text-accent transition-colors group" href="../index.html#portfolio">
+<span class="text-base transition-transform group-hover:-translate-x-1">←</span>
+<span>BACK TO PORTFOLIO</span>
+</a>
+<!-- Category Tag -->
+<div class="inline-block border border-neutral-900 px-3 py-1 bg-white text-[10px] font-mono font-bold tracking-widest uppercase text-neutral-900">
+          CATEGORY B — CARTOGRAPHY &amp; MAP DESIGN // URBAN DEMOGRAPHICS
+        </div>
+</div>
+</div>
+</section>
+<!-- Title & Executive Abstract Section -->
+<section class="w-full bg-white py-14 border-b border-neutral-200">
+<div class="max-w-6xl mx-auto px-6">
+<div class="max-w-4xl">
+<h1 class="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight text-neutral-950 uppercase leading-tight mb-6">
+          ZURICH MUNICIPAL DEMOGRAPHICS &amp; POPULATION DENSITY
+        </h1>
+<p class="text-sm sm:text-base text-neutral-700 font-medium leading-relaxed mb-8">
+          Advanced thematic choropleth cartography and spatial demographic distribution across Zurich municipal districts (Kreis 1 to 12) utilizing Jenks natural breaks classification and Open Data Zurich APIs.
+        </p>
+<!-- Action Callouts (Tomasz Gajda Framed Style) -->
+<div class="flex flex-wrap gap-4">
+<a class="inline-flex items-center gap-2 border-2 border-neutral-900 bg-neutral-900 text-white px-5 py-3 text-xs font-bold tracking-widest uppercase hover:bg-transparent hover:text-neutral-900 transition-colors" href="https://github.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-sm">code</span>
+            View GitHub Repository
+          </a>
+<a class="inline-flex items-center gap-2 border-2 border-neutral-900 bg-white text-neutral-900 px-5 py-3 text-xs font-bold tracking-widest uppercase hover:bg-neutral-900 hover:text-white transition-colors" href="#deliverables">
+<span class="material-symbols-outlined text-sm">picture_as_pdf</span>
+            Download Map PDF (300 DPI)
+          </a>
+<a class="inline-flex items-center gap-2 border-2 border-neutral-300 bg-white text-neutral-700 px-5 py-3 text-xs font-bold tracking-widest uppercase hover:border-neutral-900 hover:text-neutral-900 transition-colors" href="#data-sources">
+<span class="material-symbols-outlined text-sm">dataset</span>
+            View GeoData Sources
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Hero Map Visualizer (Plate 02) -->
+<section class="w-full bg-[#f0f2f5] py-12 lg:py-16 border-b border-neutral-300">
+<div class="max-w-6xl mx-auto px-6">
+<!-- Framed Map Card -->
+<div class="bg-white border-2 border-neutral-900 shadow-xl overflow-hidden">
+<!-- Map Neatline Top Bar -->
+<div class="bg-neutral-900 text-white px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono tracking-widest uppercase border-b border-neutral-900">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 bg-emerald-400 inline-block"></span>
+<span class="font-bold">PLATE 02 // STADT ZÜRICH MUNICIPAL DISTRICTS (KREIS 1–12)</span>
+</div>
+<div class="flex items-center gap-6 text-neutral-300">
+<span>CRS: CH1903+ / LV95 (EPSG:2056)</span>
+<span class="hidden sm:inline">SCALE 1:25,000</span>
+</div>
+</div>
+<!-- Rendered Graphic -->
+<div class="relative bg-neutral-950 p-2 sm:p-4 flex items-center justify-center">
+<img alt="Choropleth Map of Zurich Population Density by Kreis" class="w-full h-auto max-h-[720px] object-contain border border-neutral-800" src="https://lh3.googleusercontent.com/aida/AEtjO1WzRnwTIEQBC5jNeq8MLlIpp6yFq-pYxwGgEu4rigjqKNL8K4w9fw2IYyX6jD2dE-mMw0YqqJo7CjB-UKALVlIKjY_WMnchHgR9FRCKJUAoLZeIOzlRiFAYuhK2q9JIqBIZF8OS_KQ1oih6I3m3tq0y06z6tCougKO_GsemPYEe5tZnVGfkCIiq5KtYcEymHGERVcdI6JRgTGXR8gjebLZ0oIRBJnh3twcvyx9OhPOABg81jtmi1n97Ug"/>
+</div>
+<!-- Map Neatline Bottom Bar -->
+<div class="bg-neutral-100 text-neutral-800 px-4 sm:px-6 py-3 border-t border-neutral-300 grid grid-cols-2 md:grid-cols-4 gap-4 text-[10px] font-mono uppercase tracking-wider font-semibold">
+<div>
+<span class="text-neutral-500 block">DATA YEAR</span>
+<span class="font-bold text-neutral-950">2024 UPDATE</span>
+</div>
+<div>
+<span class="text-neutral-500 block">POPULATION ANALYZED</span>
+<span class="font-bold text-neutral-950">443,000+ RESIDENTS</span>
+</div>
+<div>
+<span class="text-neutral-500 block">DISTRICT UNITS</span>
+<span class="font-bold text-neutral-950">12 KREISE (34 QUARTIERE)</span>
+</div>
+<div>
+<span class="text-neutral-500 block">CLASSIFICATION</span>
+<span class="font-bold text-neutral-950">JENKS NATURAL BREAKS (5)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Metrics Quad-Grid -->
+<section class="w-full bg-white py-14 border-b border-neutral-200">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-10">
+<div class="section-title-badge">TECHNICAL METRICS</div>
+<div class="section-divider-line"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Metric 1 -->
+<div class="border-2 border-neutral-900 p-6 bg-[#fafafa] flex flex-col justify-between">
+<div>
+<div class="text-[10px] font-mono tracking-widest text-neutral-500 uppercase font-bold mb-2">ALGORITHM</div>
+<div class="text-2xl font-black text-neutral-950 mb-3 tracking-tight">JENKS BREAKS</div>
+<p class="text-xs text-neutral-600 leading-relaxed">
+              Statistical variance optimization minimizing within-class sum of squared differences while maximizing variance between classes.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-neutral-300 text-[11px] font-mono text-neutral-800 font-bold">
+            Goodness of Variance: 0.94
+          </div>
+</div>
+<!-- Metric 2 -->
+<div class="border-2 border-neutral-900 p-6 bg-[#fafafa] flex flex-col justify-between">
+<div>
+<div class="text-[10px] font-mono tracking-widest text-neutral-500 uppercase font-bold mb-2">ADMINISTRATIVE EXTENT</div>
+<div class="text-2xl font-black text-neutral-950 mb-3 tracking-tight">12 DISTRICTS</div>
+<p class="text-xs text-neutral-600 leading-relaxed">
+              Encompassing Kreis 1 (Altstadt) outward to Kreis 12 (Schwamendingen), segmented into 34 official municipal survey sectors.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-neutral-300 text-[11px] font-mono text-neutral-800 font-bold">
+            Area: 91.88 km² Surface
+          </div>
+</div>
+<!-- Metric 3 -->
+<div class="border-2 border-neutral-900 p-6 bg-[#fafafa] flex flex-col justify-between">
+<div>
+<div class="text-[10px] font-mono tracking-widest text-neutral-500 uppercase font-bold mb-2">MAXIMUM OBSERVED</div>
+<div class="text-2xl font-black text-neutral-950 mb-3 tracking-tight">14,800/km²</div>
+<p class="text-xs text-neutral-600 leading-relaxed">
+              Peak density registered in Kreis 4 (Aussersihl / Langstrasse corridor), contrasting against peri-urban green wedges.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-neutral-300 text-[11px] font-mono text-neutral-800 font-bold">
+            Corridor: Kreis 4 &amp; 5 Core
+          </div>
+</div>
+<!-- Metric 4 -->
+<div class="border-2 border-neutral-900 p-6 bg-[#fafafa] flex flex-col justify-between">
+<div>
+<div class="text-[10px] font-mono tracking-widest text-neutral-500 uppercase font-bold mb-2">PIPELINE TOOLCHAIN</div>
+<div class="text-2xl font-black text-neutral-950 mb-3 tracking-tight">QGIS + R/PY</div>
+<p class="text-xs text-neutral-600 leading-relaxed">
+              Automated spatial joins via Swiss BFS identifiers, iterative color ramp generation, and high-DPI print composer rasterization.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-neutral-300 text-[11px] font-mono text-neutral-800 font-bold">
+            Output: Vector SVG + 300DPI
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Analytical Context & Cartographic Methodology -->
+<section class="w-full bg-[#f7f8fa] py-16 border-b border-neutral-200">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-12">
+<div class="section-title-badge">CARTOGRAPHIC ANALYSIS</div>
+<div class="section-divider-line"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Left: Analytical Objectives -->
+<div class="border-2 border-neutral-900 bg-white p-8">
+<div class="flex items-center gap-2 mb-6">
+<span class="w-3 h-3 bg-neutral-900"></span>
+<h2 class="text-sm font-mono uppercase tracking-widest font-bold text-neutral-950">SPATIAL PATTERN RECOGNITION</h2>
+</div>
+<h3 class="text-xl font-bold text-neutral-900 mb-4">
+            Inner-City Densification &amp; Topographic Polarization
+          </h3>
+<p class="text-xs sm:text-sm text-neutral-700 leading-relaxed mb-4">
+            Zurich’s demographic distribution exhibits acute spatial concentration shaped by two defining physical barriers: Lake Zurich (Zürichsee) and the steep elevational relief of the Uetliberg and Zürichberg massifs. 
+          </p>
+<p class="text-xs sm:text-sm text-neutral-700 leading-relaxed mb-6">
+            Municipal planning strategies over the past two decades have directed infill growth along the central rail corridors running through Aussersihl (Kreis 4) and Industriequartier (Kreis 5). The resulting density gradient requires a non-linear classification framework to prevent the dilution of high-density nodes into broad regional generalizations.
+          </p>
+<div class="border border-neutral-300 p-4 bg-[#f9fafb]">
+<h4 class="text-xs font-mono font-bold tracking-wider uppercase text-neutral-900 mb-2">Cartographic Legibility Standards</h4>
+<ul class="text-xs text-neutral-600 space-y-2">
+<li class="flex items-start gap-2">
+<span class="font-mono text-neutral-950">01.</span>
+<span>Hydrographic contrast using calibrated blue tints to clearly separate the Limmat river corridor and lake boundary.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-mono text-neutral-950">02.</span>
+<span>Subdued topographic hillshade in the peripheral southwestern quadrant to depict uninhabited forest reserves without clutter.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-mono text-neutral-950">03.</span>
+<span>Perceptually sequential color ramp graduating from light teal (&lt;2k pop/km²) into deep midnight indigo (&gt;12k pop/km²).</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Right: Statistical Distribution Breakdown -->
+<div class="border-2 border-neutral-900 bg-white p-8">
+<div class="flex items-center gap-2 mb-6">
+<span class="w-3 h-3 bg-neutral-900"></span>
+<h2 class="text-sm font-mono uppercase tracking-widest font-bold text-neutral-950">STRATIFIED DENSITY TIERS (JENKS)</h2>
+</div>
+<div class="space-y-4">
+<!-- Tier 1 -->
+<div class="border border-neutral-200 p-4 hover:border-neutral-900 transition-colors bg-[#fafafa]">
+<div class="flex items-center justify-between mb-1">
+<span class="text-xs font-mono font-bold uppercase text-neutral-900">TIER 1: &gt;12,000 POP / KM²</span>
+<span class="text-[10px] font-mono px-2 py-0.5 bg-neutral-900 text-white font-bold">PEAK INTENSITY</span>
+</div>
+<p class="text-xs text-neutral-600 mb-2">Kreis 4 (Aussersihl), Langstrasse corridor, Hardbrücke junction.</p>
+<div class="w-full bg-neutral-200 h-2">
+<div class="bg-indigo-950 h-2" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Tier 2 -->
+<div class="border border-neutral-200 p-4 hover:border-neutral-900 transition-colors bg-[#fafafa]">
+<div class="flex items-center justify-between mb-1">
+<span class="text-xs font-mono font-bold uppercase text-neutral-900">TIER 2: 7,000 – 12,000 POP / KM²</span>
+<span class="text-[10px] font-mono px-2 py-0.5 bg-neutral-200 text-neutral-800 font-bold">URBAN CORE</span>
+</div>
+<p class="text-xs text-neutral-600 mb-2">Kreis 3 (Wiedikon), Kreis 5 (Industriequartier), Kreis 6 (Unterstrass).</p>
+<div class="w-full bg-neutral-200 h-2">
+<div class="bg-indigo-700 h-2" style="width: 75%;"></div>
+</div>
+</div>
+<!-- Tier 3 -->
+<div class="border border-neutral-200 p-4 hover:border-neutral-900 transition-colors bg-[#fafafa]">
+<div class="flex items-center justify-between mb-1">
+<span class="text-xs font-mono font-bold uppercase text-neutral-900">TIER 3: 2,000 – 7,000 POP / KM²</span>
+<span class="text-[10px] font-mono px-2 py-0.5 bg-neutral-200 text-neutral-800 font-bold">RESIDENTIAL</span>
+</div>
+<p class="text-xs text-neutral-600 mb-2">Kreis 10 (Höngg/Wipkingen), Kreis 11 (Oerlikon/Affoltern), Kreis 2 (Wollishofen).</p>
+<div class="w-full bg-neutral-200 h-2">
+<div class="bg-teal-600 h-2" style="width: 45%;"></div>
+</div>
+</div>
+<!-- Tier 4 -->
+<div class="border border-neutral-200 p-4 hover:border-neutral-900 transition-colors bg-[#fafafa]">
+<div class="flex items-center justify-between mb-1">
+<span class="text-xs font-mono font-bold uppercase text-neutral-900">TIER 4: &lt;2,000 POP / KM²</span>
+<span class="text-[10px] font-mono px-2 py-0.5 bg-neutral-200 text-neutral-800 font-bold">PERIPHERAL</span>
+</div>
+<p class="text-xs text-neutral-600 mb-2">Kreis 7 (Zürichberg slopes, Fluntern, Witikon), Uetliberg buffer zones.</p>
+<div class="w-full bg-neutral-200 h-2">
+<div class="bg-teal-200 h-2" style="width: 18%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reproducible Processing Code / Automation Pipeline -->
+<section class="w-full bg-white py-16 border-b border-neutral-200">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-10">
+<div class="section-title-badge">ETL &amp; CLASSIFICATION PIPELINE</div>
+<div class="section-divider-line"></div>
+</div>
+<!-- Code Box (Light Mode Clean Syntax) -->
+<div class="border-2 border-neutral-900 bg-neutral-950 text-neutral-100 font-mono text-xs shadow-lg overflow-hidden">
+<!-- Terminal Header -->
+<div class="bg-neutral-900 px-4 py-3 flex items-center justify-between border-b border-neutral-800 text-[11px] uppercase tracking-wider text-neutral-400">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-yellow-500 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-green-500 inline-block"></span>
+<span class="ml-2 text-white font-bold">zurich_density_jenks.py</span>
+</div>
+<span>GEOPANDAS // MAPCLASSIFY // CH1903+</span>
+</div>
+<!-- Code Content -->
+<div class="p-6 overflow-x-auto leading-relaxed text-[12px]">
+<pre><span class="text-neutral-500"># ------------------------------------------------------------------------</span>
+<span class="text-neutral-500"># Zurich Spatial Demographics ETL &amp; Choropleth Binner</span>
+<span class="text-neutral-500"># Author: Abdul Haleem Khan | EPSG:2056 LV95 Spatial Projection</span>
+<span class="text-neutral-500"># ------------------------------------------------------------------------</span>
+<span class="text-teal-400">import</span> geopandas <span class="text-teal-400">as</span> gpd
+<span class="text-teal-400">import</span> pandas <span class="text-teal-400">as</span> pd
+<span class="text-teal-400">import</span> mapclassify <span class="text-teal-400">as</span> mc
+
+<span class="text-neutral-500"># 1. Ingest official municipal boundaries (Stadt Zürich Open Data)</span>
+gdf_kreise = gpd.read_file(<span class="text-amber-300">"data/raw/stadt_zuerich_statistische_quartiere.shp"</span>).to_crs(epsg=<span class="text-sky-300">2056</span>)
+
+<span class="text-neutral-500"># 2. Join 2024 annual population census records</span>
+df_pop = pd.read_csv(<span class="text-amber-300">"data/raw/bevoelkerung_pro_kreis_2024.csv"</span>)
+gdf_merged = gdf_kreise.merge(df_pop, on=<span class="text-amber-300">"KREIS_NR"</span>, how=<span class="text-amber-300">"left"</span>)
+
+<span class="text-neutral-500"># 3. Calculate spatial area in km² and standardized density metric</span>
+gdf_merged[<span class="text-amber-300">"area_km2"</span>] = gdf_merged.geometry.area / <span class="text-sky-300">1_000_000.0</span>
+gdf_merged[<span class="text-amber-300">"density_km2"</span>] = gdf_merged[<span class="text-amber-300">"total_pop"</span>] / gdf_merged[<span class="text-amber-300">"area_km2"</span>]
+
+<span class="text-neutral-500"># 4. Compute Jenks Natural Breaks classification (k=5 classes)</span>
+classifier = mc.NaturalBreaks(gdf_merged[<span class="text-amber-300">"density_km2"</span>], k=<span class="text-sky-300">5</span>)
+gdf_merged[<span class="text-amber-300">"jenks_bin"</span>] = classifier.yb
+
+<span class="text-neutral-500"># 5. Export clean vector dataset for QGIS print layout styling</span>
+gdf_merged.to_file(<span class="text-amber-300">"data/processed/zuerich_density_2024_classified.geojson"</span>, driver=<span class="text-amber-300">"GeoJSON"</span>)
+<span class="text-teal-400">print</span>(f<span class="text-amber-300">"Processing complete. Breaks: {classifier.bins}"</span>)</pre>
+</div>
+</div>
+</div>
+</section>
+<!-- Deliverables & Download Module -->
+<section class="w-full bg-[#f7f8fa] py-16 border-b border-neutral-200" id="deliverables">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-10">
+<div class="section-title-badge">PROJECT DELIVERABLES</div>
+<div class="section-divider-line"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Item 1 -->
+<div class="border-2 border-neutral-900 bg-white p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="text-2xl font-black text-neutral-900 mb-2">01</div>
+<h3 class="text-sm font-mono uppercase tracking-wider font-bold text-neutral-900 mb-2">HIGH-RES CARTOGRAPHIC POSTER</h3>
+<p class="text-xs text-neutral-600 mb-6">
+              A1 format (594 × 841 mm) print-ready layout rendered at 300 DPI with bilingual German/English topographic typography.
+            </p>
+</div>
+<a class="inline-block text-center border-2 border-neutral-900 py-2.5 text-xs font-bold uppercase tracking-widest text-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors" href="#">
+            Download PDF [18.4 MB]
+          </a>
+</div>
+<!-- Item 2 -->
+<div class="border-2 border-neutral-900 bg-white p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="text-2xl font-black text-neutral-900 mb-2">02</div>
+<h3 class="text-sm font-mono uppercase tracking-wider font-bold text-neutral-900 mb-2">QGIS PROJECT ARCHIVE</h3>
+<p class="text-xs text-neutral-600 mb-6">
+              Complete `.qgz` workspace bundle containing layer styles (`.qml`), print composer templates, and hillshade shading parameters.
+            </p>
+</div>
+<a class="inline-block text-center border-2 border-neutral-900 py-2.5 text-xs font-bold uppercase tracking-widest text-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors" href="#">
+            Download QGZ Bundle [6.2 MB]
+          </a>
+</div>
+<!-- Item 3 -->
+<div class="border-2 border-neutral-900 bg-white p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="text-2xl font-black text-neutral-900 mb-2">03</div>
+<h3 class="text-sm font-mono uppercase tracking-wider font-bold text-neutral-900 mb-2">STRUCTURED GEOJSON DATA</h3>
+<p class="text-xs text-neutral-600 mb-6">
+              Sanitized vector geometries joined with population metrics, area calculations, and Jenks classification attributes.
+            </p>
+</div>
+<a class="inline-block text-center border-2 border-neutral-900 py-2.5 text-xs font-bold uppercase tracking-widest text-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors" href="#">
+            Download GeoJSON [1.1 MB]
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Pagination / Adjacent Case Studies -->
+<section class="w-full bg-white py-12 border-b border-neutral-200">
+<div class="max-w-6xl mx-auto px-6">
+<div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+<a class="group flex items-center gap-3 text-xs font-mono uppercase tracking-wider font-bold text-neutral-700 hover:text-neutral-950" href="riyadh.html">
+<span class="text-base group-hover:-translate-x-1 transition-transform">←</span>
+<span>PREVIOUS: Riyadh Cadastral Land-Use Mapping</span>
+</a>
+<div class="w-8 h-[2px] bg-neutral-300 hidden sm:block"></div>
+<a class="group flex items-center gap-3 text-xs font-mono uppercase tracking-wider font-bold text-neutral-700 hover:text-neutral-950" href="logistics.html">
+<span>NEXT: Business Logistics &amp; Commute Optimization</span>
+<span class="text-base group-hover:translate-x-1 transition-transform">→</span>
+</a>
+</div>
+</div>
+</section>
+</div></main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-neutral-950 text-white py-16 border-t border-neutral-800" data-purpose="site-footer">
+<div class="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
+<!-- Back to Top Arrow matching Tomasz Gajda footer arrow button -->
+<a aria-label="Back to Top" class="w-12 h-12 bg-neutral-800 hover:bg-neutral-700 text-white flex items-center justify-center mb-8 border border-neutral-700 transition-colors" href="#">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<!-- Footer Monogram -->
+<div class="text-lg font-black tracking-widest mb-4">
+        ABDUL HALEEM KHAN
+      </div>
+<p class="text-xs text-neutral-400 tracking-wider uppercase mb-8 max-w-md">
+        Geographical Information Systems • Remote Sensing Science • Automated Spatial ETL Pipelines
+      </p>
+<!-- Footer Social Links -->
+<div class="flex items-center space-x-6 mb-8 text-neutral-400 text-xs font-bold tracking-widest uppercase">
+<a class="hover:text-white transition-colors" href="https://linkedin.com" rel="noopener" target="_blank">LinkedIn</a>
+<a class="hover:text-white transition-colors" href="https://github.com" rel="noopener" target="_blank">GitHub</a>
+<a class="hover:text-white transition-colors" href="mailto:ahaleem.spatial@outlook.com">Email</a>
+<a class="hover:text-white transition-colors" href="../index.html#about">Bio</a>
+</div>
+<!-- Copyright Notice -->
+<p class="text-[11px] text-neutral-500 font-mono tracking-wider">
+        © 2026 Abdul Haleem Khan.  All rights reserved.
+      </p>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: JavaScript Functionality -->
+<script data-purpose="portfolio-filtering">
+    // Filtering logic for the project gallery
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filterValue = button.getAttribute('data-filter');
+
+          // Toggle active styling on buttons
+          filterButtons.forEach(btn => {
+            btn.classList.remove('bg-neutral-900', 'text-white');
+            btn.classList.add('border', 'border-neutral-300', 'text-neutral-600');
+          });
+          button.classList.remove('border', 'border-neutral-300', 'text-neutral-600');
+          button.classList.add('bg-neutral-900', 'text-white');
+
+          // Filter card visibility
+          projectCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+            if (filterValue === 'all' || cardCategory === filterValue) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+<script data-purpose="mobile-menu-toggle">
+    // Simple toggle for the responsive mobile header drawer
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when a navigation item is clicked
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+  </script>
+<!-- END: JavaScript Functionality -->
+</body></html>

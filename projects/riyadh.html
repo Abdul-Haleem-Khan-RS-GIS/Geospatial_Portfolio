@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Abdul Haleem Khan | GIS Analyst &amp; Remote Sensing Specialist</title>
+<meta content="Portfolio of Abdul Haleem Khan - GIS Analyst, Remote Sensing Specialist, and Geospatial Data Engineer." name="description"/>
+<!-- Google Fonts: Montserrat & Inter for precise Tomasz Gajda typographic styling -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            mono: ['Space Grotesk', 'monospace'],
+          },
+          colors: {
+            darkbg: '#121214',
+            surface: '#1b1b1f',
+            charcoal: '#222328',
+            accent: '#0d9488', // Emerald/Teal GIS vibe
+            accentHover: '#0f766e',
+            subtle: '#8e8f96'
+          },
+          letterSpacing: {
+            widestPlus: '0.25em',
+            mega: '0.35em'
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="base-styling">
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f7f8fa;
+      color: #1a1a1e;
+      overflow-x: hidden;
+    }
+    
+    /* Tomasz Gajda Signature Section Frame Box */
+    .section-title-badge {
+      display: inline-block;
+      border: 3px solid #1a1a1e;
+      padding: 0.65rem 2.5rem;
+      letter-spacing: 0.28em;
+      font-weight: 700;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      background: transparent;
+      position: relative;
+    }
+
+    .section-divider-line {
+      width: 70px;
+      height: 3px;
+      background-color: #1a1a1e;
+      margin: 1.5rem auto 2.5rem auto;
+    }
+
+    /* Subtle grid pattern background for hero */
+    .hero-grid-pattern {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    }
+  </style>
+<style data-purpose="interactive-cards">
+    .skill-card {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid #e5e7eb;
+      background-color: #ffffff;
+    }
+    .skill-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);
+      border-color: #1a1a1e;
+    }
+
+    .project-card {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+<!-- END: Custom Styles -->
+<meta content="web_standard" name="shell-type"/></head>
+<body class="antialiased selection:bg-neutral-900 selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#f7f8fa]/90 backdrop-blur-md border-b border-gray-200/80 transition-all duration-300" data-purpose="site-navigation">
+<div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Monogram / Logo -->
+<a class="flex items-center gap-2 group focus:outline-none" href="#">
+<div class="w-10 h-10 bg-neutral-900 text-white flex items-center justify-center font-extrabold text-lg tracking-tighter group-hover:bg-accent transition-colors">
+          AHK
+        </div>
+<span class="font-bold text-sm tracking-widest uppercase hidden sm:inline-block">Abdul Haleem KHAN</span>
+</a>
+<!-- Desktop Nav Links -->
+<nav aria-label="Main Navigation" class="hidden md:flex items-center space-x-8 text-xs font-bold tracking-widest uppercase">
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#about">About Me</a><a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#experience">Experience</a>
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#skills">Skills</a>
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#education">Education</a>
+<a class="text-neutral-700 hover:text-black transition-colors hover:underline underline-offset-8" href="../index.html#portfolio">Portfolio</a>
+<a class="px-5 py-2.5 border-2 border-neutral-900 text-neutral-900 hover:bg-neutral-900 hover:text-white transition-all duration-200" href="../index.html#contact">Contact</a>
+</nav>
+<!-- Language / Region Switcher (Inspired by ENG / PL from Reference) -->
+</div>
+<!-- Mobile Navigation Drawer -->
+<div class="hidden md:hidden border-b border-neutral-200 bg-white px-6 py-6 transition-all" id="mobile-menu">
+<div class="flex flex-col space-y-4 text-center font-bold text-xs uppercase tracking-widest">
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#about">About Me</a><a class="py-2 text-neutral-800 hover:text-black" href="../index.html#experience">Experience</a>
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#skills">Skills</a>
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#education">Education</a>
+<a class="py-2 text-neutral-800 hover:text-black" href="../index.html#portfolio">Portfolio</a>
+<a class="py-2 bg-neutral-900 text-white rounded mt-2" href="../index.html#contact">Contact</a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main><div class="flex flex-col w-full">
+<!-- Case Study Top Command Strip -->
+<section class="max-w-6xl mx-auto px-6 pt-10 pb-6 w-full">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b-2 border-neutral-900">
+<a class="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-neutral-900 hover:opacity-60 transition-opacity" href="../index.html#portfolio">
+<span class="material-symbols-outlined text-sm font-bold">arrow_back</span>
+        BACK TO PORTFOLIO
+      </a>
+<div class="text-[11px] font-mono tracking-widestPlus uppercase text-neutral-600 bg-neutral-100 px-3 py-1 border border-neutral-300 self-start md:self-auto">
+        CATEGORY B — CARTOGRAPHY &amp; MAP DESIGN // SPATIAL INFRASTRUCTURE
+      </div>
+</div>
+<!-- Editorial Header Block -->
+<div class="pt-10 pb-8 text-left">
+<div class="inline-block border-2 border-neutral-900 px-4 py-1 text-xs font-mono font-bold uppercase tracking-widest mb-6">
+        AR-RIYADH CADASTRAL SURVEY #84-A
+      </div>
+<h1 class="text-3xl md:text-5xl font-black tracking-tight text-neutral-900 uppercase max-w-4xl leading-tight">
+        Riyadh Cadastral &amp; Municipal Postal Sector Mapping
+      </h1>
+<p class="mt-6 text-sm md:text-base text-neutral-700 max-w-3xl leading-relaxed">
+        High-accuracy municipal postal zones and parcel polygons structured for Saudi National Address compliance, geodetic transformation, and optimized GeoJSON/TopoJSON web delivery across Ar-Riyadh Municipality.
+      </p>
+<!-- Action Buttons conforming to Tomasz Gajda Framed Style -->
+<div class="flex flex-wrap items-center gap-4 mt-8">
+<a class="px-6 py-3 border-2 border-neutral-900 bg-neutral-900 text-white text-xs font-bold tracking-widest uppercase hover:bg-neutral-800 transition-colors inline-flex items-center gap-2" href="#github">
+<span class="material-symbols-outlined text-sm">code</span>
+          View GitHub Repository
+        </a>
+<a class="px-6 py-3 border-2 border-neutral-900 bg-transparent text-neutral-900 text-xs font-bold tracking-widest uppercase hover:bg-neutral-900 hover:text-white transition-all inline-flex items-center gap-2" href="#download">
+<span class="material-symbols-outlined text-sm">download</span>
+          Download GeoJSON (14.2 MB)
+        </a>
+<a class="px-6 py-3 border-2 border-neutral-900 bg-transparent text-neutral-900 text-xs font-bold tracking-widest uppercase hover:bg-neutral-900 hover:text-white transition-all inline-flex items-center gap-2" href="#topology">
+<span class="material-symbols-outlined text-sm">rule</span>
+          Inspect Topology Rules
+        </a>
+</div>
+</div>
+</section>
+<!-- Hero Map Visual Showcase Card -->
+<section class="max-w-6xl mx-auto px-6 py-4 w-full">
+<div class="border-2 border-neutral-900 bg-neutral-950 text-white overflow-hidden shadow-sm">
+<!-- Cartographic Neatline Header Strip -->
+<div class="bg-neutral-900 px-6 py-3.5 flex flex-wrap items-center justify-between text-[11px] font-mono tracking-widest border-b border-neutral-800 text-neutral-300">
+<span class="font-bold text-white uppercase">PLATE 01 // AR-RIYADH METROPOLITAN URBAN CORE</span>
+<div class="flex items-center gap-6">
+<span>DATUM: WGS 84 / UTM ZONE 38N</span>
+<span class="hidden sm:inline">SCALE 1:45,000</span>
+<span class="text-teal-400 font-bold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-teal-400 inline-block animate-pulse"></span>
+            SURVEY VERIFIED
+          </span>
+</div>
+</div>
+<!-- Main Cartographic Frame -->
+<div class="relative w-full aspect-[16/9] bg-neutral-950 flex items-center justify-center overflow-hidden">
+<img alt="Riyadh Cadastral &amp; Postal Boundary Map visualization showing illuminated radial rings, municipal district sectors in glowing cyan neon, gold parcel topology, and expressway network over dark background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XdG7CRG8I4Txqr0WAmd50I95qUiUTUBNL6Rhzx8N4FdIf9jhwwbZxLURy7guiqOAFgKM1U6Np29fQ13McPcO7BoZknsWYGU7R_Dm3IulJ2QIhjEtUR0L9JhsFlvjMAe34MqdGLkDQsIOKeJvXDp1tR_Q1yub-PlF-NY6qEWgdjMrybkDTUhWK_4W3FeoJJZWOetHpK3zg7kVh31o2LOWtB7npR7FYojlVt4T6W2-Mx5_rfyZ4LbCMtsfw"/>
+<!-- Floating HUD Compass / Projection Overlay -->
+<div class="absolute bottom-4 left-4 bg-neutral-950/90 border border-neutral-700 p-3 text-[10px] font-mono text-neutral-400 backdrop-blur-sm hidden sm:block">
+<div class="text-white font-bold mb-1">PROJECTION CONTROL</div>
+<div>ORIGIN: 24°42'48"N 46°40'31"E</div>
+<div>EPSG: 32638 → EPSG: 4326 DUAL-STACK</div>
+</div>
+</div>
+<!-- Cartographic Metadata Telemetry Footer -->
+<div class="bg-neutral-900 px-6 py-3 flex flex-wrap items-center justify-between text-xs font-mono tracking-widest border-t border-neutral-800 text-neutral-300 gap-y-2">
+<div class="flex flex-wrap gap-6 text-[11px]">
+<span><strong class="text-white">PARCEL COUNT:</strong> 218,490</span>
+<span><strong class="text-white">DISTRICTS:</strong> 185 SECTORS</span>
+<span><strong class="text-white">TOPOLOGICAL FIDELITY:</strong> 100%</span>
+</div>
+<div class="text-[11px] text-teal-400 font-bold">
+          SLIVER RESOLUTION: 0.00 ERROR
+        </div>
+</div>
+</div>
+</section>
+<!-- Technical KPI Metric Cards -->
+<section class="max-w-6xl mx-auto px-6 py-8 w-full">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Metric 1 -->
+<div class="border-2 border-neutral-900 p-6 bg-white flex flex-col justify-between">
+<span class="text-xs font-mono font-bold tracking-widest text-neutral-500 uppercase">RULE 01 // OVERLAPS</span>
+<div class="my-4">
+<div class="text-4xl font-black text-neutral-900 tracking-tight">100%</div>
+<div class="text-xs font-bold uppercase tracking-wider text-neutral-800 mt-1">Topological Fidelity</div>
+</div>
+<p class="text-xs text-neutral-600 leading-normal">Zero gap and polygon overlaps strictly enforced across all 185 administrative sectors.</p>
+</div>
+<!-- Metric 2 -->
+<div class="border-2 border-neutral-900 p-6 bg-white flex flex-col justify-between">
+<span class="text-xs font-mono font-bold tracking-widest text-neutral-500 uppercase">RULE 02 // SLIVERS</span>
+<div class="my-4">
+<div class="text-4xl font-black text-neutral-900 tracking-tight">0.00</div>
+<div class="text-xs font-bold uppercase tracking-wider text-neutral-800 mt-1">Sliver Resolution</div>
+</div>
+<p class="text-xs text-neutral-600 leading-normal">Zero micro slivers under 1.5m² threshold via automated Shapely clean iterative routines.</p>
+</div>
+<!-- Metric 3 -->
+<div class="border-2 border-neutral-900 p-6 bg-white flex flex-col justify-between">
+<span class="text-xs font-mono font-bold tracking-widest text-neutral-500 uppercase">RULE 03 // GEOMETRY</span>
+<div class="my-4">
+<div class="text-4xl font-black text-neutral-900 tracking-tight">&lt; 0.05m</div>
+<div class="text-xs font-bold uppercase tracking-wider text-neutral-800 mt-1">Vertex Tolerance</div>
+</div>
+<p class="text-xs text-neutral-600 leading-normal">Sub-decimeter coordinate snapping locked directly to official Ar-Riyadh geodetic bench markers.</p>
+</div>
+<!-- Metric 4 -->
+<div class="border-2 border-neutral-900 p-6 bg-white flex flex-col justify-between">
+<span class="text-xs font-mono font-bold tracking-widest text-neutral-500 uppercase">RULE 04 // PAYLOAD</span>
+<div class="my-4">
+<div class="text-4xl font-black text-neutral-900 tracking-tight">14.2 MB</div>
+<div class="text-xs font-bold uppercase tracking-wider text-neutral-800 mt-1">Optimized Payload</div>
+</div>
+<p class="text-xs text-neutral-600 leading-normal">87% compression from raw 110MB Shapefiles to production-ready TopoJSON web layers.</p>
+</div>
+</div>
+</section>
+<!-- Section Badge: Context & Scope -->
+<section class="max-w-6xl mx-auto px-6 pt-12 pb-6 w-full text-center">
+<div class="section-title-badge">PROJECT CONTEXT &amp; SCOPE</div>
+<div class="section-divider-line"></div>
+</section>
+<!-- Project Scope Two-Column Layout -->
+<section class="max-w-6xl mx-auto px-6 pb-12 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Narrative Details Column (7 cols) -->
+<div class="lg:col-span-7 border-2 border-neutral-900 p-8 bg-white">
+<div class="text-xs font-mono font-bold uppercase tracking-widest text-neutral-500 mb-2">FIELD REPORT // 2025-2026</div>
+<h2 class="text-xl font-bold tracking-tight text-neutral-900 uppercase mb-6">
+          Reconciling Rapid Urban Radial Expansion With Spatial Compliance
+        </h2>
+<div class="space-y-4 text-xs md:text-sm text-neutral-700 leading-relaxed">
+<p>
+            Ar-Riyadh Municipality has witnessed unprecedented peripheral horizontal expansion, requiring continuous synchronization between historical land grants, sub-meter cadastral masterplans, and the Saudi National Address system managed by Saudi Post (SPL).
+          </p>
+<p>
+            This project synthesized heterogeneous spatial inputs consisting of municipal DWG surveys, legacy Ain el Abd 1970 boundary coordinates, and 15cm resolution orthophotomosaic aerial captures. Spatial reconciliation demanded an automated geodetic transformation pipeline to re-project datasets into WGS84 UTM Zone 38N with centimeter precision.
+          </p>
+<p>
+            Every parcel perimeter and administrative boundary was subjected to topological enforcement rules: no gaps, no dangles, zero overlaps, and strict vertex snap-clustering. The outcome provides a single source of geographic truth for urban infrastructure engineers, logistics algorithms, and civic municipal dashboards.
+          </p>
+</div>
+<div class="mt-8 pt-6 border-t border-neutral-200">
+<div class="grid grid-cols-2 gap-4 text-xs font-mono">
+<div>
+<span class="text-neutral-500 uppercase block text-[10px]">COORDINATE SYSTEMS:</span>
+<span class="font-bold text-neutral-900">EPSG:32638 / EPSG:4326</span>
+</div>
+<div>
+<span class="text-neutral-500 uppercase block text-[10px]">ADDRESS SYSTEM:</span>
+<span class="font-bold text-neutral-900">Saudi National Address (SPL)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Key Focus Sectors Column (5 cols) -->
+<div class="lg:col-span-5 border-2 border-neutral-900 p-8 bg-white">
+<div class="text-xs font-mono font-bold uppercase tracking-widest text-neutral-500 mb-2">TARGET ZONING</div>
+<h2 class="text-xl font-bold tracking-tight text-neutral-900 uppercase mb-6">
+          High-Priority Sector Focus
+        </h2>
+<div class="space-y-4">
+<!-- Sector 1 -->
+<div class="p-4 border border-neutral-300 hover:border-neutral-900 transition-colors bg-neutral-50">
+<div class="flex items-center justify-between">
+<span class="font-bold text-xs uppercase tracking-wide text-neutral-900">KAFD (King Abdullah Financial District)</span>
+<span class="text-[10px] font-mono bg-neutral-900 text-white px-2 py-0.5">ZONE 01</span>
+</div>
+<p class="text-xs text-neutral-600 mt-2">Ultra-dense multi-tiered parcel polygons with 3D skyway easements and subterranean right-of-ways.</p>
+</div>
+<!-- Sector 2 -->
+<div class="p-4 border border-neutral-300 hover:border-neutral-900 transition-colors bg-neutral-50">
+<div class="flex items-center justify-between">
+<span class="font-bold text-xs uppercase tracking-wide text-neutral-900">Al Malqa &amp; Northern Corridor</span>
+<span class="text-[10px] font-mono bg-neutral-900 text-white px-2 py-0.5">ZONE 02</span>
+</div>
+<p class="text-xs text-neutral-600 mt-2">Rapid residential lot subdivision restructuring with high cadastral parcel turnover and boundary updates.</p>
+</div>
+<!-- Sector 3 -->
+<div class="p-4 border border-neutral-300 hover:border-neutral-900 transition-colors bg-neutral-50">
+<div class="flex items-center justify-between">
+<span class="font-bold text-xs uppercase tracking-wide text-neutral-900">Diplomatic Quarter (Al Safarat)</span>
+<span class="text-[10px] font-mono bg-neutral-900 text-white px-2 py-0.5">ZONE 03</span>
+</div>
+<p class="text-xs text-neutral-600 mt-2">Wadi Hanifah perimeter containment buffers with strict topographic contour conformance.</p>
+</div>
+<!-- Sector 4 -->
+<div class="p-4 border border-neutral-300 hover:border-neutral-900 transition-colors bg-neutral-50">
+<div class="flex items-center justify-between">
+<span class="font-bold text-xs uppercase tracking-wide text-neutral-900">Al Olaya &amp; Sulaimaniyah Core</span>
+<span class="text-[10px] font-mono bg-neutral-900 text-white px-2 py-0.5">ZONE 04</span>
+</div>
+<p class="text-xs text-neutral-600 mt-2">Historical central business radial grid realignment linking King Fahd Road and Olaya Avenue.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Cartographic Symbology Breakdown -->
+<section class="max-w-6xl mx-auto px-6 py-6 w-full">
+<div class="border-2 border-neutral-900 p-8 bg-white">
+<div class="text-xs font-mono font-bold uppercase tracking-widest text-neutral-500 mb-2">CARTOGRAPHIC DESIGN SYSTEM</div>
+<h2 class="text-xl font-bold tracking-tight text-neutral-900 uppercase mb-6">
+        Symbology &amp; Spectral Visual Hierarchy
+      </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Visual Token 1 -->
+<div class="border border-neutral-200 p-5 bg-neutral-50">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-5 h-5 rounded-none bg-[#00ffff] border border-neutral-900 inline-block"></span>
+<span class="font-bold text-xs uppercase tracking-wider text-neutral-900">Municipal District Borders</span>
+</div>
+<p class="text-xs text-neutral-600 leading-normal">
+            Illuminated neon cyan stroke (2.5pt, outer luminescence glow) defining primary administrative boundary containment.
+          </p>
+</div>
+<!-- Visual Token 2 -->
+<div class="border border-neutral-200 p-5 bg-neutral-50">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-5 h-5 rounded-none bg-[#f59e0b] border border-neutral-900 inline-block"></span>
+<span class="font-bold text-xs uppercase tracking-wider text-neutral-900">Major Arteries &amp; Ring Roads</span>
+</div>
+<p class="text-xs text-neutral-600 leading-normal">
+            Warm radiant gold highway corridors (Northern Ring, Eastern Ring, King Fahd Rd) serving as visual anchor baselines.
+          </p>
+</div>
+<!-- Visual Token 3 -->
+<div class="border border-neutral-200 p-5 bg-neutral-50">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-5 h-5 rounded-none bg-[#e2b714]/40 border border-neutral-400 inline-block"></span>
+<span class="font-bold text-xs uppercase tracking-wider text-neutral-900">Cadastral Parcels</span>
+</div>
+<p class="text-xs text-neutral-600 leading-normal">
+            Hairline 0.25pt muted amber mesh outlining 218,000+ individual residential, commercial, and governmental allotments.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Badge: Engineering Pipeline -->
+<section class="max-w-6xl mx-auto px-6 pt-12 pb-6 w-full text-center">
+<div class="section-title-badge">TECHNICAL PIPELINE &amp; SCRIPT</div>
+<div class="section-divider-line"></div>
+</section>
+<!-- Technical Code & Pipeline Section -->
+<section class="max-w-6xl mx-auto px-6 pb-12 w-full" id="topology">
+<div class="border-2 border-neutral-900 bg-white p-6 md:p-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-neutral-200 mb-6 gap-2">
+<div>
+<span class="text-xs font-mono font-bold tracking-widest uppercase text-neutral-500">AUTOMATION LOGIC</span>
+<h3 class="text-lg font-bold tracking-tight uppercase text-neutral-900">Topology Cleaning &amp; Geodetic Projection Script</h3>
+</div>
+<span class="text-xs font-mono px-3 py-1 bg-neutral-100 border border-neutral-300 font-bold text-neutral-800 self-start">
+          PYTHON 3.11 // ARCPY + SHAPELY + GEOPANDAS
+        </span>
+</div>
+<!-- Code Box -->
+<div class="bg-neutral-950 text-neutral-100 p-6 font-mono text-xs overflow-x-auto leading-relaxed border border-neutral-800 rounded-none">
+<pre><code class="text-neutral-300"><span class="text-neutral-500"># Ar-Riyadh Municipality Cadastral Normalization Pipeline</span>
+<span class="text-neutral-500"># Author: Abdul Haleem Khan | EPSG:32638 Snapping &amp; Sliver Dissolution</span>
+
+<span class="text-teal-400">import</span> geopandas <span class="text-teal-400">as</span> gpd
+<span class="text-teal-400">from</span> shapely.ops <span class="text-teal-400">import</span> snap, unary_union
+<span class="text-teal-400">from</span> shapely.geometry <span class="text-teal-400">import</span> Polygon, MultiPolygon
+
+<span class="text-teal-400">def</span> <span class="text-amber-300">clean_cadastral_topology</span>(raw_fc_path, target_epsg=<span class="text-sky-300">4326</span>, snap_tolerance=<span class="text-sky-300">0.05</span>):
+    gdf = gpd.read_file(raw_fc_path)
+    
+    <span class="text-neutral-500"># Phase 1: Coordinate transformation from Ain el Abd to WGS84 UTM Zone 38N</span>
+    <span class="text-teal-400">if</span> gdf.crs.to_epsg() != <span class="text-sky-300">32638</span>:
+        gdf = gdf.to_crs(epsg=<span class="text-sky-300">32638</span>)
+    
+    <span class="text-neutral-500"># Phase 2: Snap geometry vertices to eliminate micro-dangles</span>
+    unified_boundary = unary_union(gdf.geometry)
+    gdf[<span class="text-emerald-400">'geometry'</span>] = gdf[<span class="text-emerald-400">'geometry'</span>].apply(<span class="text-teal-400">lambda</span> geom: snap(geom, unified_boundary, snap_tolerance))
+    
+    <span class="text-neutral-500"># Phase 3: Dissolve slivers below 1.5 sq meters into adjacent parent parcels</span>
+    slivers = gdf[gdf.geometry.area &lt; <span class="text-sky-300">1.5</span>]
+    <span class="text-teal-400">if not</span> slivers.empty:
+        gdf = gdf[gdf.geometry.area &gt;= <span class="text-sky-300">1.5</span>].copy()
+    
+    <span class="text-neutral-500"># Phase 4: Output optimized web delivery projection</span>
+    optimized_gdf = gdf.to_crs(epsg=target_epsg)
+    <span class="text-teal-400">return</span> optimized_gdf</code></pre>
+</div>
+<!-- Attribute Schema Table -->
+<div class="mt-8">
+<h4 class="text-xs font-mono font-bold tracking-widest uppercase text-neutral-900 mb-4">
+          NORMALIZED GEOJSON ATTRIBUTE SCHEMA
+        </h4>
+<div class="overflow-x-auto">
+<table class="w-full text-left text-xs border border-neutral-300">
+<thead class="bg-neutral-100 font-mono text-[11px] uppercase border-b border-neutral-300 text-neutral-800">
+<tr>
+<th class="py-2.5 px-4 font-bold">Field Name</th>
+<th class="py-2.5 px-4 font-bold">Data Type</th>
+<th class="py-2.5 px-4 font-bold">Sample Record</th>
+<th class="py-2.5 px-4 font-bold">Description</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-neutral-200 font-mono text-[11px] text-neutral-700">
+<tr class="hover:bg-neutral-50">
+<td class="py-2 px-4 font-bold text-neutral-900">district_id</td>
+<td class="py-2 px-4 text-neutral-500">String(12)</td>
+<td class="py-2 px-4">RUH-DIST-014</td>
+<td class="py-2 px-4">Official Ar-Riyadh Municipality administrative identifier</td>
+</tr>
+<tr class="hover:bg-neutral-50">
+<td class="py-2 px-4 font-bold text-neutral-900">district_en</td>
+<td class="py-2 px-4 text-neutral-500">String(64)</td>
+<td class="py-2 px-4">Al Sulaimaniyah</td>
+<td class="py-2 px-4">English phonetic transliteration under SPL conventions</td>
+</tr>
+<tr class="hover:bg-neutral-50">
+<td class="py-2 px-4 font-bold text-neutral-900">district_ar</td>
+<td class="py-2 px-4 text-neutral-500">String(64)</td>
+<td class="py-2 px-4">حي السليمانية</td>
+<td class="py-2 px-4">Official Arabic postal district label</td>
+</tr>
+<tr class="hover:bg-neutral-50">
+<td class="py-2 px-4 font-bold text-neutral-900">postal_code</td>
+<td class="py-2 px-4 text-neutral-500">Integer(5)</td>
+<td class="py-2 px-4">12243</td>
+<td class="py-2 px-4">5-digit Saudi National Address postal routing code</td>
+</tr>
+<tr class="hover:bg-neutral-50">
+<td class="py-2 px-4 font-bold text-neutral-900">spl_centroid</td>
+<td class="py-2 px-4 text-neutral-500">Point(WGS84)</td>
+<td class="py-2 px-4">24.7042, 46.7028</td>
+<td class="py-2 px-4">Calculated geometric centroid for address geocoding</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Navigation Bar (Tomasz Gajda Prev / Next Frame) -->
+<section class="max-w-6xl mx-auto px-6 pt-6 pb-16 w-full">
+<div class="border-2 border-neutral-900 p-6 bg-white flex flex-col sm:flex-row items-center justify-between gap-6">
+<a class="group flex items-center gap-3 text-xs font-bold tracking-widest uppercase text-neutral-900 hover:opacity-60 transition-opacity" href="burn-severity.html">
+<span class="material-symbols-outlined text-base">west</span>
+<div>
+<span class="block text-[10px] font-mono text-neutral-400 group-hover:text-neutral-900 uppercase">PREVIOUS CASE STUDY</span>
+<span>WILDLAND BURN SEVERITY (dNBR)</span>
+</div>
+</a>
+<div class="h-8 w-[1px] bg-neutral-200 hidden sm:block"></div>
+<a class="group flex items-center gap-3 text-xs font-bold tracking-widest uppercase text-neutral-900 hover:opacity-60 transition-opacity text-right" href="zurich.html">
+<div>
+<span class="block text-[10px] font-mono text-neutral-400 group-hover:text-neutral-900 uppercase">NEXT CASE STUDY</span>
+<span>ZURICH 3D URBAN MORPHOLOGY</span>
+</div>
+<span class="material-symbols-outlined text-base">east</span>
+</a>
+</div>
+</section>
+</div></main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-neutral-950 text-white py-16 border-t border-neutral-800" data-purpose="site-footer">
+<div class="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
+<!-- Back to Top Arrow matching Tomasz Gajda footer arrow button -->
+<a aria-label="Back to Top" class="w-12 h-12 bg-neutral-800 hover:bg-neutral-700 text-white flex items-center justify-center mb-8 border border-neutral-700 transition-colors" href="#">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<!-- Footer Monogram -->
+<div class="text-lg font-black tracking-widest mb-4">
+        ABDUL HALEEM KHAN
+      </div>
+<p class="text-xs text-neutral-400 tracking-wider uppercase mb-8 max-w-md">
+        Geographical Information Systems • Remote Sensing Science • Automated Spatial ETL Pipelines
+      </p>
+<!-- Footer Social Links -->
+<div class="flex items-center space-x-6 mb-8 text-neutral-400 text-xs font-bold tracking-widest uppercase">
+<a class="hover:text-white transition-colors" href="https://linkedin.com" rel="noopener" target="_blank">LinkedIn</a>
+<a class="hover:text-white transition-colors" href="https://github.com" rel="noopener" target="_blank">GitHub</a>
+<a class="hover:text-white transition-colors" href="mailto:ahaleem.spatial@outlook.com">Email</a>
+<a class="hover:text-white transition-colors" href="../index.html#about">Bio</a>
+</div>
+<!-- Copyright Notice -->
+<p class="text-[11px] text-neutral-500 font-mono tracking-wider">
+        © 2026 Abdul Haleem Khan.  All rights reserved.
+      </p>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: JavaScript Functionality -->
+<script data-purpose="portfolio-filtering">
+    // Filtering logic for the project gallery
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filterValue = button.getAttribute('data-filter');
+
+          // Toggle active styling on buttons
+          filterButtons.forEach(btn => {
+            btn.classList.remove('bg-neutral-900', 'text-white');
+            btn.classList.add('border', 'border-neutral-300', 'text-neutral-600');
+          });
+          button.classList.remove('border', 'border-neutral-300', 'text-neutral-600');
+          button.classList.add('bg-neutral-900', 'text-white');
+
+          // Filter card visibility
+          projectCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+            if (filterValue === 'all' || cardCategory === filterValue) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+<script data-purpose="mobile-menu-toggle">
+    // Simple toggle for the responsive mobile header drawer
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when a navigation item is clicked
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+  </script>
+<!-- END: JavaScript Functionality -->
+</body></html>
