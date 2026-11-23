@@ -76,6 +76,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .pbody{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;padding:24px 0 72px}
 .pbody h2{font-size:26px;margin-top:0}.pbody ol{padding-left:20px;color:var(--muted)}
 .side{background:#fff;border:1px solid var(--line);padding:20px;align-self:start}
+.mapfull figcaption{font-size:14px;color:var(--muted);padding-top:10px;text-align:center}.mapfull figcaption .mono{margin-right:6px}
+.find{padding-left:0;list-style:none}.find li{border-left:3px solid var(--accent);padding:6px 0 6px 14px;margin:0 0 10px;background:#fff}
+.side hr{border:0;border-top:1px solid var(--line);margin:18px 0}.side .dl{margin-bottom:0}
 .side ul{padding-left:18px;margin:8px 0 0;font-size:14px;color:var(--muted)}
 .next{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0 64px}
 .next a{text-decoration:none}
