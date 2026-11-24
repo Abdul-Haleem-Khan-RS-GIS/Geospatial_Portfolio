@@ -79,7 +79,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .side{background:#fff;border:1px solid var(--line);padding:20px;align-self:start}
 .mapfull figcaption{font-size:14px;color:var(--muted);padding-top:10px;text-align:center}.mapfull figcaption .mono{margin-right:6px}
 .find{padding-left:0;list-style:none}.find li{border-left:3px solid var(--accent);padding:6px 0 6px 14px;margin:0 0 10px;background:#fff}
-.side hr{border:0;border-top:1px solid var(--line);margin:18px 0}.side .dl{margin-bottom:0}
+.side hr{border:0;border-top:1px solid var(--line);margin:18px 0}.side .dl{margin-bottom:0}.side .muted{color:var(--muted)}
 .globe-sec{background:#0e1517;color:#e9ecea;padding:88px 0}.globe-sec h2{color:#fff}.globe-sec .lead{color:#b9c2c0}.globe-sec .mono{color:#9fb3b0}
 .tours{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 18px}.tours button{font:500 14px Inter,sans-serif;background:transparent;color:#e9ecea;border:1px solid #3b4a4c;padding:9px 14px;cursor:pointer}
 .tours button:hover,.tours button[aria-pressed=true]{background:#f5b700;color:#16181a;border-color:#f5b700}
