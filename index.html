@@ -177,13 +177,13 @@
 <section id="contact"><div class="wrap contact">
 <div><span class="mono">Contact</span><h2>Let's work on your map</h2><p class="sub">Tell me about the area, the data you have and what decision the map should support. I usually reply within a few hours.</p>
 <dl><dt>Email</dt><dd><a href="mailto:abdulhaleemk03@gmail.com">abdulhaleemk03@gmail.com</a></dd><dt>Upwork</dt><dd><a href="https://www.upwork.com/freelancers/abdulhaleemrsgis">abdulhaleemrsgis</a></dd><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/abdul-haleem-khan-rs-gis-specialist">abdul-haleem-khan-rs-gis-specialist</a></dd><dt>Based in</dt><dd>Lahore, Pakistan (GMT+5) · working remotely</dd></dl></div>
-<form action="https://formsubmit.co/abdulhaleemk03@gmail.com" method="POST">
+<form id="contact-form" data-email="abdulhaleemk03@gmail.com" action="https://formsubmit.co/abdulhaleemk03@gmail.com" method="POST">
 <input type="hidden" name="_subject" value="New portfolio enquiry"><input type="hidden" name="_captcha" value="true"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/thanks.html"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 <label for="n">Name</label><input id="n" name="name" required>
 <label for="e">Email</label><input id="e" name="email" type="email" required autocomplete="email">
 <label for="s">Project / organisation</label><input id="s" name="project">
 <label for="m">Message</label><textarea id="m" name="message" rows="5" required></textarea>
-<p style="margin-top:16px"><button class="btn" type="submit">Send message</button></p></form>
+<p style="margin-top:16px"><button class="btn" type="submit">Send message</button></p><p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p></form>
 </div></section>
 </main><footer><div class="wrap"><span>© 2026 Abdul Haleem Khan · GIS Engineer & Remote Sensing Specialist</span>
 <span><a href="https://www.linkedin.com/in/abdul-haleem-khan-rs-gis-specialist">LinkedIn</a> · <a href="https://github.com/Abdul-Haleem-Khan-RS-GIS">GitHub</a> · <a href="https://www.upwork.com/freelancers/abdulhaleemrsgis">Upwork</a> · <a href="mailto:abdulhaleemk03@gmail.com">Email</a></span></div></footer>
@@ -192,5 +192,6 @@ const bs=document.querySelectorAll('.filters button'),cs=document.querySelectorA
 bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));const f=b.dataset.f;cs.forEach(c=>c.style.display=(f==='all'||c.dataset.cat===f)?'':'none')}));
 </script>
 <script src="assets/globe.js" defer></script>
+<script src="assets/contact.js" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Abdul Haleem Khan", "jobTitle": "GIS Engineer & Remote Sensing Specialist", "url": "https://abdul-haleem-khan-rs-gis.github.io/Geospatial_Portfolio/", "email": "mailto:abdulhaleemk03@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK"}, "sameAs": ["https://www.linkedin.com/in/abdul-haleem-khan-rs-gis-specialist", "https://github.com/Abdul-Haleem-Khan-RS-GIS", "https://www.upwork.com/freelancers/abdulhaleemrsgis"]}</script>
 </body></html>
