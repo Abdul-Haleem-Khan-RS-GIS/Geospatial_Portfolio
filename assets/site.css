@@ -93,5 +93,5 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .side ul{padding-left:18px;margin:8px 0 0;font-size:14px;color:var(--muted)}
 .next{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0 64px}
 .next a{text-decoration:none}
-@media(max-width:900px){.hero .grid,.two,.contact,.pbody{grid-template-columns:1fr}.cards,.skills,.reviews{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr 1fr}nav a:not(.btn){display:none}}
+@media(max-width:900px){.sheet.portrait{margin:0 auto;max-width:340px}.mapfull{padding:6px}.mapfull img{width:100%;max-height:none;height:auto}.hero .grid,.two,.contact,.pbody{grid-template-columns:1fr}.cards,.skills,.reviews{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr 1fr}nav a:not(.btn){display:none}}
 @media(max-width:600px){.morelist th:nth-child(2),.morelist td:nth-child(2),.morelist th:nth-child(3),.morelist td:nth-child(3){display:none}.ctas .btn{flex:1;text-align:center}.facts{grid-template-columns:1fr}.facts div{border-right:0;border-bottom:1px solid var(--line)}.cards,.skills,.reviews{grid-template-columns:1fr}.stats{gap:20px}h2{font-size:30px}}
