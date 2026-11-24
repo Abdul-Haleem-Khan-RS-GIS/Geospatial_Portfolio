@@ -73,7 +73,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);background:#fff;margin:24px 0 32px}
 .facts div{padding:14px 16px;border-right:1px solid var(--line)}.facts div:last-child{border-right:0}
 .facts dd{margin:4px 0 0;font-size:15px}
-.mapfull{background:#fff;border:1px solid var(--line);padding:12px;margin-bottom:20px}
+.mapfull{background:#fff;border:1px solid var(--line);padding:12px;margin:0 0 20px}
 .mapfull a{cursor:zoom-in}.mapfull img{max-height:82vh;width:auto;margin:0 auto}
 .pbody{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;padding:24px 0 72px}
 .pbody h2{font-size:26px;margin-top:0}.pbody ol{padding-left:20px;color:var(--muted)}
